@@ -1,0 +1,7 @@
+# Gunny 9.2 Flash .gitignore
+*.rar
+*.zip
+*.7z
+*.tmp
+*.log
+Thumbs.db
