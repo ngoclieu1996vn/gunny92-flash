@@ -100,7 +100,7 @@
     <PETS_EAT enable="true" />
   </config>
   <update>
-    <version from="1" to="259">
+    <version from="1" to="260">
       <file value="flash/*" />
       <file value="*" />
     </version>
