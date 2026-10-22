@@ -1,0 +1,58 @@
+<style name="teamdungeon" version="1.0.1" source="ui/vietnam/swf/teamdungeon.swf">
+	<components>
+		
+	</components>
+	
+	<customDisplay>
+	<!-- 战队赛 -->
+		<custom classname="asset.teamDungeon.scene.statue" stylename="teamDungeon.scene.statue" x="735" y="834" buttonMode="true" />
+		<custom classname="asset.teamDungeon.scene.effect1" stylename="teamDungeon.scene.effect1" x="266" y="951" buttonMode="true" />
+		<custom classname="asset.teamDungeon.scene.effect2" stylename="teamDungeon.scene.effect2" x="1209" y="739" buttonMode="true" />
+		<custom classname="asset.teamDungeon.scene.effect3" stylename="teamDungeon.scene.effect3" x="893" y="1175" buttonMode="true" />
+		<custom classname="asset.teamDungeon.scene.effect4" stylename="teamDungeon.scene.effect4" x="668" y="463" buttonMode="true" />
+		
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazePlayerPos" x="331" y="1060" />
+		
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos0" x="271" y="1020" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos1" x="368" y="1018" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos2" x="467" y="1017" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos3" x="571" y="1022" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos4" x="669" y="1020" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos5" x="775" y="1033" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos6" x="866" y="1034" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos7" x="965" y="1035" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos8" x="1042" y="989" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos9" x="1106" y="940" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos10" x="1163" y="883" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos11" x="1090" y="817" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos12" x="987" y="808" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos13" x="878" y="790" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos14" x="779" y="785" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos15" x="673" y="773" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos16" x="582" y="710" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos17" x="490" y="651" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos18" x="472" y="569" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos19" x="527" y="515" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos20" x="620" y="508" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos21" x="716" y="504" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos22" x="794" y="566" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos23" x="889" y="567" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos24" x="949" y="519" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos25" x="1059" y="538" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.mazeCellPos26" x="1234" y="522" />
+	
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.witchPos" x="809" y="900" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.witchMovePos" x="1318" y="566" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magic.getShinePos" x="1" y="1" />
+		
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.chickNpcPos1" x="439" y="832" />
+		<custom classname="flash.geom.Point" stylename="teamDgn.magicScene.chickNpcPos2" x="1044" y="665" />
+		
+	
+	<!-- 暗黑绝境 -->
+		<custom classname="asset.darkboundary.scene.effect1" stylename="darkboundary.scene.effect1" x="266" y="951" buttonMode="true" />
+		<custom classname="asset.darkboundary.scene.effect2" stylename="darkboundary.scene.effect2" x="1209" y="739" buttonMode="true" />
+		<custom classname="asset.darkboundary.scene.effect3" stylename="darkboundary.scene.effect3" x="893" y="1175" buttonMode="true" />
+		<custom classname="asset.darkboundary.scene.effect4" stylename="darkboundary.scene.effect4" x="668" y="463" buttonMode="true" />
+	</customDisplay>
+</style>

@@ -32,22 +32,22 @@
 	<reward level="8">
 			<rewardItem sort="1" title="远征码头功能:" content="打怪通关，奖励优厚的神秘之地入口" items="|"/>
 			<rewardItem sort="2" title="铁匠铺功能:" content="大幅加强武器威力的地方，这里没有失败！" items="10015|10015"/>
-			<rewardItem sort="3" title="任务获得道具:" content="" items="11019|11019"/>
+			<rewardItem sort="3" title="任务获得道具:" content="" items="11025|11025"/>
 	</reward>
 	<reward level="9">
 			<rewardItem sort="1" title="商城功能:" content="实现你更漂亮，更强大，更与众不同的愿望的道具商店" items="|"/>
 			<rewardItem sort="2" title="合成功能:" content="" items="11001,11005,11009,11013|11001,11005,11009,11013"/>
-			<rewardItem sort="3" title="任务获得道具:" content="" items="11021|11021"/>
+			<rewardItem sort="3" title="任务获得道具:" content="" items="11025|11025"/>
 	</reward>
 	<reward level="10">
 			<rewardItem sort="1" title="熔炼功能:" content="铁匠铺功能，将4个低级物品熔炼成1个高级物品" items="|"/>
 			<rewardItem sort="2" title="任务获得任意武器:" content="" items="7006,7012|7006,7012"/>
-			<rewardItem sort="3" title="任务获得道具:" content="" items="11001,11022|11001,11022"/>
+			<rewardItem sort="3" title="任务获得道具:" content="" items="11001,11025|11001,11025"/>
 	</reward>
 	<reward level="11">
 			<rewardItem sort="1" title="镶嵌功能:" content="铁匠铺功能，镶嵌宝珠到装备上可以使你实力大增哦！" items="|"/>
 			<rewardItem sort="2" title="任务获得攻击宝珠:" content="" items="311101|311101"/>
-			<rewardItem sort="3" title="任务获得道具:" content="" items="11021|11021"/>
+			<rewardItem sort="3" title="任务获得道具:" content="" items="11025|11025"/>
 	</reward>
 	<reward level="12">
 			<rewardItem sort="1" title="名人堂功能:" content="弹弹堂世界中最有面子的人都在这里哦！" items="|"/>
@@ -57,7 +57,7 @@
 	<reward level="13">
 			<rewardItem sort="1" title="温泉功能:" content="在这泡澡既可以交朋友又可以得大量经验哦" items="|"/>
 			<rewardItem sort="2" title="任务获得任意武器:" content="" items="7013,7014|7013,7014"/>
-			<rewardItem sort="3" title="任务获得道具:" content="" items="11022|11022"/>
+			<rewardItem sort="3" title="任务获得道具:" content="" items="11025|11025"/>
 	</reward>
 	<reward level="14">
 			<rewardItem sort="1" title="拍卖场功能:" content="这里是淘取宝贝和寄卖物品的地方哦！" items="|"/>

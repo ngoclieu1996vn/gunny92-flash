@@ -1,0 +1,23 @@
+<style name="gameII" version="1.0.1" source="ui/vietnam/swf/gameII.swf">
+	<sets>
+	</sets>
+	<components>
+		<component classname="com.pickgliss.ui.image.ScaleFrameImage" stylename="asset.game.simpleBoxPicAsset" resourceLink="asset.game.yellowbox,asset.game.redBoxAsset,asset.game.riceDumplingAsset,asset.game.moonCake,asset.game.lanternAsset,asset.game.xmasBell,asset.game.ChineseLanternAsset,asset.game.ChineseLanternAssetFu,asset.game.redPacketBox.small,asset.game.redPacketBox.big,asset.game.box3" x="0" y="0"/>
+	</components>
+	<customDisplay>
+		
+		<custom classname="flash.geom.Point" stylename="asset.game.petFlag.pos0" x="-31" y="-101"/>
+		<custom classname="flash.geom.Point" stylename="asset.game.petFlag.pos1" x="-11" y="-101"/>
+		<custom classname="flash.geom.Point" stylename="asset.game.petFlag.pos2" x="9" y="-101"/>
+		<custom classname="flash.geom.Point" stylename="asset.game.petFlag.pos3" x="29" y="-101"/>
+		<custom classname="flash.geom.Point" stylename="asset.game.petFlag.pos4" x="49" y="-101"/>
+		
+	</customDisplay>
+	<bitmaps>
+		<bitmapData resourceLink="asset.game.yellowAsset" width="50" height="50" smoothing="true" />
+		<bitmapData resourceLink="asset.game.redBoxAsset" width="50" height="50" smoothing="true" />
+		<bitmapData resourceLink="asset.game.riceDumplingAsset" width="50" height="50" smoothing="true" />
+		<bitmapData resourceLink="asset.game.lanternAsset" width="50" height="50" smoothing="true" />
+		<bitmapData resourceLink="asset.game.soulHatAsset" width="47" height="24" smoothing="true" />
+	</bitmaps>
+</style>

@@ -1,0 +1,163 @@
+
+3FashionFreshVoteFrame.xml�-<View width="365" height="215">
+  <Image skin="asset.fashion.remaindRightBg" x="0" y="0"/>
+  <Button skin="asset.ui.btn_close9" x="334" y="-13" stateNum="1" var="btnClose"/>
+  <Label text="确定消耗{0}{1}，增加一次投票机会" x="23" y="57" var="txtInfo" bold="true" size="14" color="0xfbe0ff" stroke="0x32004e,1,1,5"/>
+  <Button skin="asset.ui.btn_cancel1" x="219" y="178" stateNum="1" var="btnCancel"/>
+  <Image skin="asset.fashion.littleBg" x="20" y="94"/>
+  <Button skin="asset.ui.btn_ok1" x="73" y="178" stateNum="1" var="btnOK"/>
+  <Label x="119" y="139" text="将消耗3000点券" size="14" color="0xff00d2" bold="true" name="_costTxt" stroke="0x32004e,1,1,5"/>
+  <RadioGroup skin="asest.ui.btn_check7" x="78" y="96" var="groupRadio" labelColors="0xffffff,0xffffff,0xffffff,0xffffff" labelSize="14" labels="Xu,Xu Khóa" labelBold="true" space="70" direction="horizontal" labelMargin="0,3,0,3"/>
+</View>5FashionVoteSubmitFrame.xml�%<View width="365" height="215" x="0" y="0">
+  <Image skin="asset.fashion.remaindRightBg" x="0" y="0"/>
+  <Label text="确定消耗300点券，投20票？" x="77" y="57" var="txtInfo" bold="true" color="0xfbe0ff" size="14"/>
+  <Image skin="asset.fashion.littleBg" x="20" y="94"/>
+  <RadioButton label="Xu" skin="asest.ui.btn_check7" x="149" y="96" labelColors="0xffffff,0xffffff,0xffffff,0xffffff" labelBold="true" labelFont="宋体" labelSize="14" labelMargin="2,3,2,2" var="radio" selected="true"/>
+  <Label text="将消耗3000点券" x="119" y="139" var="costTxt" bold="true" color="0xff00d2" size="14"/>
+  <Button skin="asset.ui.btn_ok1" x="73" y="178" var="btnOK" stateNum="1"/>
+  <Button skin="asset.ui.btn_cancel1" x="219" y="178" var="btnCancel" stateNum="1"/>
+  <Button skin="asset.ui.btn_close9" x="334" y="-13" var="btnClose" stateNum="1"/>
+  <Image skin="asset.fashion.promptTxt" x="135" y="8"/>
+</View>1room/FashionRoomView.xml�Y<View width="1000" height="600">
+  <Button skin="asset.fashion.menuShowNameAcAsset" x="16" y="21" stateNum="1" var="btn_showName"/>
+  <Button skin="asset.fashion.menuShowPaoAcAsset" x="16" y="63" var="btn_showPaoPao" stateNum="1"/>
+  <Box x="730" y="540" var="box_menu">
+    <Image skin="asset.fashion.room.toolBgAsset"/>
+    <Button skin="asset.fashion.room.toolSwitchAsset" y="9" stateNum="1" var="btn_menu" x="5"/>
+    <Button skin="asset.fashion.voteLeftBtn" x="35" y="2" stateNum="1" var="btn_leftVote"/>
+    <Button skin="asset.fashion.voteMiddleBtn" x="95" y="0" stateNum="1" var="btn_middleVote"/>
+    <Button skin="asset.fashion.voteRightBtn" x="153" y="2" stateNum="1" var="btn_rightVote"/>
+    <Button skin="asset.fashion.roomExitBtn" x="218" y="8" stateNum="1" var="btn_return"/>
+  </Box>
+  <SelectButtonEx x="930" y="367" skin="asset.fashion.rankingIcon" stateNum="1" bottomBgSkin="asset.fashion.room.btnDefaultBgAsset|-14,-9" rollOverBgSkin="asset.fashion.room.btnSelectedBgAsset|-14,-9|0" var="btn_ranking"/>
+  <SelectButtonEx x="921" y="443" skin="asset.fashion.room.sendMoneyAsset" stateNum="1" bottomBgSkin="asset.fashion.room.btnDefaultBgAsset|-5,-6" rollOverBgSkin="asset.fashion.room.btnSelectedBgAsset|-5,-6|0" var="btn_sendRed"/>
+</View>-FashionNoticeFrame.xml�_<View width="418" height="422">
+  <Image skin="asset.fashion.noticebg" x="0" y="0"/>
+  <Button skin="asset.ui.btn_close9" x="387" y="-14" stateNum="1" var="btnClose"/>
+</View>;room/FashionCorssAreaRank.xml�<View width="770" height="500">
+  <Image skin="asset.fashion.showPlayerBg" x="2" y="17"/>
+  <Image skin="asset.fashion.rankingListBg" x="359" y="13"/>
+  <Button skin="asset.fashion.equipBtn" x="236" y="440" stateNum="1" var="btnEquip"/>
+  <Button skin="asset.ui.btn_close9" x="729" y="3" stateNum="1" var="btnClose"/>
+  <TabListEx x="386" y="59" var="tab_rank">
+    <TabButtonEx skin="asset.fashion.areaTabUnSelected,asset.fashion.areaTabSelected" name="item0"/>
+    <TabButtonEx skin="asset.fashion.crossAreaTabUnSelected,asset.fashion.crossAreaTabSelected" x="90" y="0" name="item1"/>
+  </TabListEx>
+  <Label text="50" x="463" y="457" color="0xffffff" font="宋体" size="16" bold="true" var="txtRank"/>
+  <List x="389" y="116" repeatY="10" width="371" height="329" spaceY="1" visible="false">
+    <FashionCoressAreaBrankItem runtime="fashion.room.FashionCoressAreaBrankItem" name="render"/>
+  </List>
+  <Image skin="asset.ui.img_input1" x="628" y="455"/>
+</View>Groom/FashionCoressAreaBrankItem.xml�)<View width="370" height="32">
+  <Clip clipsUrl="asset.fashion.rank1,asset.fashion.rank2,asset.fashion.rank3" index="0" var="clip_rank" x="24" y="0"/>
+  <Label text="12" x="26" y="6" var="lbl_rank" font="宋体" size="14" color="0xffffff"/>
+  <Label x="107" y="8" var="lbl_name" size="14" color="0xffffff" width="140" align="center" text="1"/>
+  <Label text="0" x="259" y="8" var="lbl_number" size="14" width="109" height="18" align="center" color="0xffffff"/>
+</View>3FashionBuySubmitFrame.xml�k<View width="365" height="215">
+  <Image skin="asset.fashion.remaindRightBg" x="0" y="0"/>
+  <Button skin="asset.ui.btn_close9" x="336" y="-12" var="btnClose" stateNum="1"/>
+  <Button skin="asset.fashion.buyBtn" x="147" y="179" stateNum="1" var="btnBuy"/>
+  <Label text="Tốn Xu Bình Chọn: " x="131" y="96" bold="true" color="0xffffff" size="14" align="left"/>
+  <Label text="Tuần này được mua: " x="132" y="119" align="left" bold="true" color="0xffffff" size="14"/>
+  <Label text="0" x="269" y="98" bold="true" color="0xff00d2" font="宋体" size="14" stroke="0x320044,1,1,5" var="txtMoney" align="left"/>
+  <Label text="32" x="278" y="119" var="txtCnt" color="0xff00d2" font="宋体" size="14" stroke="0x320044,1,1,5" bold="true" align="left"/>
+  <Image skin="asset.fashion.promptTxt" x="131" y="8"/>
+</View>/FashionBuyVoteFrame.xml�{<View width="366" height="276">
+  <Image skin="asset.fashion.voteBg" x="0" y="0"/>
+  <Button skin="asset.ui.btn_close9" x="337" y="-15" stateNum="1" var="btnClose"/>
+  <Label text="Hãy chọn số lần bỏ phiếu" x="88" y="28" bold="true" color="0xfbe0ff" size="14" stroke="0x32004e,1,1,5"/>
+  <Label text="本次投票消耗点券{0}，获得评选赛金币{1}" x="15" y="194" color="0xff0000" bold="true" size="12" stroke="0x32004e,1,1,5" var="txtInfo"/>
+  <RadioGroup labels="1 phiếu (Miễn phí),10 phiếu,50 phiếu,Khác               Phiếu" skin="asset.ui.btn_check8" x="108" y="60" var="groupRadio" direction="vertical" labelBold="true" labelSize="14" labelColors="0xffffff,0xffffff,0xffffff,0xffffff,0xffffff,0xffffff,0xffffff,0xffffff" space="15" labelMargin="5,0,0,2"/>
+  <Button skin="asset.ui.btn_ok1" x="142" y="232" stateNum="1" var="btnOK"/>
+  <TextInput text="150" skin="asset.ui.img_input1" x="173" y="163" width="50" height="22" color="0xffffff" size="12" font="宋体" bold="true" align="center" margin="0,2,0,0" var="inputOther" restrict="0-9"/>
+</View>)FashionMainFrame.xml�Q<View width="840" height="548">
+  <Image skin="asset.fashion.bigBg" x="0" y="0"/>
+  <Button skin="asset.ui.btn_close9" x="803" y="80" stateNum="1" var="btnClose"/>
+  <Button skin="asset.fashion.rankBtn" x="34" y="477" stateNum="1" var="btnRank" label="Xem BXH lần trước" labelColors="0xffffff" labelStroke="0x7936a6,1,2,2,5" labelBold="true" labelMargin="-2,2,-2,2" width="117" height="35"/>
+  <Label x="152" y="471" color="0xc7b1ff" bold="true" size="12" stroke="0x32004e,1,1,5" var="txtVoteCnt"/>
+  <Label x="152" y="491" var="txtRank" bold="true" color="0xc7b1ff" size="12" stroke="0x32004e,1,1,5" text="Xếp hạng: Chưa có hạng"/>
+  <Label x="292" y="467" bold="true" color="0xffffff" size="16" stroke="0x32004e,1,1,5" var="txtFreshCnt" text="Số lần bỏ phiếu 10/10"/>
+  <Label x="295" y="489" var="txtTime" bold="true" size="16" color="0xff0000" stroke="0xffffff,2,2,5"/>
+  <Button skin="asset.fashion.signUpBtn" x="663" y="465" stateNum="1" var="btnSignUp"/>
+  <Button skin="asset.fashion.changeBtn" x="661" y="464" stateNum="1" var="btnChange"/>
+  <Label x="294" y="488" var="txtInfo" bold="true" color="0xffffff" size="16" stroke="0x32004e,1,1,5" align="left" text="Bỏ phiếu xong tạo mới nhân vật"/>
+  <Button skin="asset.ui.btn_add" x="475" y="471" stateNum="1" var="btnAdd"/>
+  <Button skin="asset.ui.btn_help3" x="771" y="78" stateNum="1" var="btnHelp"/>
+  <TabListEx x="15" y="117" var="tabFashion">
+    <TabButtonEx skin="asset.ui.tab4.normal|asset.fashion.tabGirl.normal,asset.ui.tab4.selected|asset.fashion.tabGirl.selected" offsets="10,9,10,9" name="item0" x="0" y="-1" width="95"/>
+    <TabButtonEx skin="asset.ui.tab4.normal|asset.fashion.tabCouples.normal,asset.ui.tab4.selected|asset.fashion.tabCouples.selected" x="90" offsets="10,9,10,9" name="item1" visible="false" y="0"/>
+    <TabButtonEx skin="asset.ui.tab3.normal|asset.fashion.tabShop.normal,asset.ui.tab3.selected|asset.fashion.tabShop.selected" x="701" offsets="10,3,10,3" name="item2"/>
+  </TabListEx>
+  <Button x="615" y="121" var="btnAward" stateNum="1" skin="asset.fashion.awardBtn"/>
+  <Button x="508" y="118" var="btnNotice" stateNum="1" imageLabel="asset.fashion.noticeBtn" skin="asset.ui.tab3.normal" imageLabelX="12" imageLabelY="8" visible="false"/>
+  <Button skin="asset.fashion.enterRoomBtn" x="327" y="462" stateNum="1" var="btn_enterScene"/>
+  <Label text="周六、日，11：30、15：00、19：30开启全区选秀舞台" x="45" y="430" var="lbl_corssAreaTime" size="12" bold="true" color="0x00d2ff" stroke="0x510067,1,2,2,5" width="743" height="18" align="center"/>
+</View>+FashionAwardFrame.xml�<View width="385" height="186">
+  <Image skin="asset.fashion.awardBg" x="0" y="0"/>
+  <Button skin="asset.fashion.awardLeftBtn" x="24" y="107" stateNum="1" var="btnLeft"/>
+  <Button skin="asset.fashion.awardRightBtn" x="336" y="107" stateNum="1" var="btnRight"/>
+  <Image skin="asset.fashion.awardItemBg" x="58" y="90"/>
+  <Image skin="asset.fashion.awardItemBg" x="153" y="90"/>
+  <Image skin="asset.fashion.awardItemBg" x="248" y="90"/>
+  <Button skin="asset.ui.btn_close9" x="354" y="-14" stateNum="1" var="btnClose"/>
+  <TabListEx x="17" y="32" var="tab_award">
+    <TabButtonEx skin="asset.fashion.currenAreaAward.unSelected,asset.fashion.currenAreaAward.selected" name="item0"/>
+    <TabButtonEx skin="asset.fashion.corssAreaAward.unSelected,asset.fashion.corssAreaAward.selected" x="101" y="0" name="item1"/>
+  </TabListEx>
+</View>'FashionShopView.xml�E<View width="813" height="365">
+  <Image skin="asset.fashion.shopBg" x="0" y="0"/>
+  <Box x="623" y="330">
+    <Image skin="asset.ui.img_input1" x="51"/>
+    <Button skin="asset.ui.btn_rightPage1" x="119" stateNum="1" var="btnRight" y="1"/>
+    <Button skin="asset.ui.btn_leftPage1" stateNum="1" var="btnLeft" y="1"/>
+    <Label text="2/15" x="69" y="3" color="0xffffff" size="12" var="txtInfo"/>
+  </Box>
+  <Label text="Shop tạo mới vào T2 hằng tuần" x="265" y="332" color="0xff00d2" bold="true" size="12" stroke="0x32004e,1,1,5"/>
+  <Label text="5000" x="122" y="329" width="117" height="21" color="0xffffff" bold="true" font="宋体" size="16" align="center" var="moneyTxt"/>
+  <List x="14" y="19" spaceX="4" spaceY="5" repeatX="3" repeatY="3" var="listShop">
+    <FashionShopItem runtime="fashion.items.FashionShopItem" name="render"/>
+  </List>
+</View>)FashionHelpFrame.xml�[<View width="399" height="493">
+  <Image skin="asset.fashion.helpBg" x="0" y="0"/>
+  <Button skin="asset.ui.btn_close9" x="396" y="-12" stateNum="1" var="btnClose"/>
+</View>+FashionAlertFrame.xml�<View width="576" height="215">
+  <Image skin="asset.fashion.remaindLeftBg" x="0" y="0"/>
+  <Image skin="asset.fashion.remaindRightBg" x="211" y="0"/>
+  <Button skin="asset.ui.btn_close9" x="545" y="-13" stateNum="1" var="closeBtn"/>
+  <Label text="Xác nhận dùng ngoại hình hiện tại tham gia Thi Thời Trang-Cặp Đôi" x="235" y="43" color="0xfbe0ff" bold="true" size="14" stroke="0x32004e,1,1,5" var="alertTxt" wordWrap="true" width="320"/>
+  <Image skin="asset.fashion.littleBg" x="228" y="94"/>
+  <Button skin="asset.ui.btn_ok1" x="272" y="178" stateNum="1" var="okBtn"/>
+  <Button skin="asset.ui.btn_cancel1" x="450" y="178" stateNum="1" var="cancelBtn"/>
+  <Label text="将消耗3000点券" x="328" y="139" name="_costTxt" color="0xff00d2" bold="true" size="14" stroke="0x320044,1,1,5"/>
+  <RadioGroup skin="asest.ui.btn_check7" x="352" y="98" var="moneyGroup" labelColors="0xffffff,0xffffff,0xffffff,0xffffff" labelSize="14" labels="Xu" labelBold="true" space="70" direction="horizontal" selectedIndex="0"/>
+</View>3items/FashionShopItem.xml�<View width="259" height="95" name="render">
+  <Image skin="asset.fashion.shopItemBg" x="0" y="0"/>
+  <Label text="经验药水三级" x="81" y="9" var="txtItemName" align="left" bold="true" color="0xffffff" size="14"/>
+  <Label text="500" x="86" y="34" var="txtMoney" color="0xffd200" bold="true" align="left" size="16" font="宋体"/>
+  <Image skin="asset.ddtcore.Gold" x="129" y="33"/>
+  <Button skin="asset.fashion.buyBtn" x="187" y="61" var="btnBuy" stateNum="1"/>
+  <Label text="Được mua:" x="91" y="65" color="0xc7beff" size="12"/>
+  <Label text="99" x="155" y="66" var="txtCnt" bold="true" color="0xc7beff" font="宋体" size="14" align="left"/>
+  <Clip x="158" y="37" var="clipStatus" clipsUrl="asset.fashion.actived,asset.fashion.unactive" index="0"/>
+</View>;room/FashionRoomVoteFrame.xml�<View width="390" height="335">
+  <Image skin="asset.fashion.roomVoteViewBg" x="3" y="3"/>
+  <Button skin="asset.ui.btn_close9" x="350" y="-2" stateNum="1" var="btnClose"/>
+  <Label text="Hãy chọn số lần bỏ phiếu" x="100" y="38" bold="true" color="0xfbe0ff" size="14" stroke="0x32004e,1,1,5"/>
+  <Label text="本次投票消耗点券{0}，获得评选赛金币{1}" x="37" y="249" color="0xff0000" bold="true" size="12" stroke="0x32004e,1,1,5" var="txtInfo"/>
+  <RadioGroup labels="1 phiếu (Miễn phí),Sáng Đèn (Miễn phí 10 phiếu mỗi ngày 1 lần),10 phiếu,50 phiếu,Khác                    Phiếu" skin="asset.ui.btn_check8" x="23" y="72" var="groupRadio" direction="vertical" labelBold="true" labelSize="14" labelColors="0xffffff,0xffffff,0xffffff,0xffffff,0xffffff,0xffffff,0xffffff,0xffffff" space="15" labelMargin="5,0,0,2"/>
+  <Button skin="asset.ui.btn_ok1" x="155" y="291" stateNum="1" var="btnOK"/>
+  <TextInput text="150" skin="asset.ui.img_input1" x="91" y="212" width="68" height="22" color="0xffffff" size="12" font="宋体" bold="true" align="center" margin="0,2,0,0" var="inputOther" restrict="0-9" maxChars="10"/>
+</View>=room/FashionSendRedPackage.xml�<View width="434" height="552">
+  <Image skin="asset.fashion.sendRedpackageBg"/>
+  <RadioGroup x="148" y="177" var="rg_check">
+    <RadioButton stateNum="1" label="Tuyển Thủ\nBên Trái" labelSize="14" labelBold="true" labelColors="0xf5e858" labelStroke="0xab3f89,2,2,10" name="item0" checkButtonSkin="asset.fashion.redpackageCheck"/>
+    <RadioButton stateNum="1" label="Tuyển Thủ\nỞ Giữa" labelSize="14" labelBold="true" labelColors="0xf5e858" labelStroke="0xab3f89,2,2,10" x="105" name="item1" checkButtonSkin="asset.fashion.redpackageCheck"/>
+    <RadioButton label="Tuyển Thủ\nBên Phải" labelSize="14" labelBold="true" labelColors="0xf5e858" labelStroke="0xab3f89,2,2,10" y="40" name="item2" selected="false" stateNum="1" checkButtonSkin="asset.fashion.redpackageCheck"/>
+  </RadioGroup>
+  <Label text=" lì xì" x="318" y="273" size="14" bold="true" color="0xff96e7" stroke="0xa42c89,2,2,4"/>
+  <TextInput x="163" y="272" align="center" text="1" margin="5,2,5,2" stroke="0xc83737,2,2,4" color="0xffffff" font="宋体" size="16" var="input_redNumber" bold="true" restrict="0-9" maxChars="4"/>
+  <TextArea text="我为左侧选手带盐，快与我投一票吧" x="72" y="347" color="0xff96e7" width="286" height="78" size="14" stroke="0xa42c89,2,2,4" maxChars="50" leading="3" letterSpacing="1" var="txt_desc"/>
+  <Button skin="asset.fashion.sendRedPackageBtn" x="143" y="457" stateNum="1" var="btn_send"/>
+  <Button skin="asset.fashion.redpackageBigClose" x="372" y="115" stateNum="1" var="btn_close"/>
+  <Label text="花费点券：10000" x="169" y="310" size="12" bold="true" color="0xffd800" stroke="0xb80182,2,2,5" var="lbl_lostMoney"/>
+</View>

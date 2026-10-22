@@ -1,4 +1,4 @@
-<style name="signActivity" version="2.0.1" source="ui/spain/swf/signActivity.swf">
+<style name="signActivity" version="2.0.1" source="ui/vietnam/swf/signActivity.swf">
 
 	<sets>
 		<set type="flash.text.TextFormat" stylename="signActivityFrame.activeTimeTxtTF" args="Arial,14,0xFFFAAD,true,,,,,left"/>

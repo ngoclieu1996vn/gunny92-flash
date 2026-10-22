@@ -1,0 +1,72 @@
+<style name="halloween" version="1.0.1" source="ui/vietnam/swf/halloween.swf">
+	<sets>
+		<set stylename="halloween.viewtf1" args="Arial,12,0xffd878,true" type="flash.text.TextFormat" leading="5"/>
+		<set stylename="halloween.viewgf1" args="0x532100,2,2,4,30" type="flash.filters.GlowFilter"/>
+		<set stylename="halloween.viewtf2" args="Arial,14,0xfff2b2,true" type="flash.text.TextFormat" leading="5"/>
+		<set stylename="halloween.viewgf2" args="0x8c14d0,1,2,2,30" type="flash.filters.GlowFilter"/>
+		<set stylename="halloween.viewtf3" args="Arial,12,0xfff8d6,true,,,,,center" type="flash.text.TextFormat"></set>
+		<set stylename="halloween.viewgf3" args="0x4b270d,1,4,4,10" type="flash.filters.GlowFilter"></set>
+		<set stylename="halloween.viewtf4" args="Arial,14,0xffdd94" type="flash.text.TextFormat"></set>
+		<set stylename="halloween.viewgf4" args="0x281300,2,4,4,10" type="flash.filters.GlowFilter"></set>
+		<set stylename="halloween.viewtf5" args="Arial,16,0xff7800,true" type="flash.text.TextFormat"></set>
+		<set stylename="halloween.viewgf5" args="0x281300,2,4,4,10" type="flash.filters.GlowFilter"></set>
+
+	</sets>
+	<bitmaps>
+		
+	</bitmaps>
+	<components>
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="halloween.closeBtn"
+			backStyle="asset.halloween.closeBtn"  x="474" y="28"/>
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="halloween.descriptionText" 
+			textFormatStyle="halloween.viewtf1" filterString="halloween.viewgf1"
+			x="35" y="66" width="370" height="20" wordWrap="true"/>
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="halloween.timeText" 
+			textFormatStyle="halloween.viewtf1" filterString="halloween.viewgf1"
+			x="99" y="104" width="200" height="20" wordWrap="true"/>
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="halloween.candyNumText" 
+			textFormatStyle="halloween.viewtf2" filterString="halloween.viewgf2" x="381" y="227"/>
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="halloween.pumpkinBuyBtn" 
+			backStyle="asset.halloween.pumpkinBuy" x="108" y="205"/>
+		<component classname="com.pickgliss.ui.image.Scale9CornerImage" stylename="halloween.currentPageInput" 
+			parentStyle="core.Scale9CornerImage.scale9CornerImageInputBG" x="185" y="255" width="62" height="23"/>
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="halloween.prePageBtn"
+			backStyle="asset.halloween.btnPrePage" x="130" y="255"/>			
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="halloween.nextPageBtn"
+			backStyle="asset.halloween.btnNextPage" x="248" y="255"/>
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="halloween.currentPage" 
+			textFormatStyle="halloween.viewtf3" filterString="halloween.viewgf3" x="183" y="260" 
+			autoSize="none" width="70" type="dynamic" height="20" text="1/1"/>
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="halloween.itemsNameText" 
+			textFormatStyle="halloween.viewtf4" filterString="halloween.viewgf4" x="80" y="4"/>
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="halloween.itemsPriceText" 
+			textFormatStyle="halloween.viewtf5" filterString="halloween.viewgf5" x="80" y="22"/>
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="halloween.exchangeBtn"
+			backStyle="asset.halloween.exchange"  x="132" y="53"/>
+			
+		<component classname="halloween.view.HalloweenQuickExchange" backStyle="SimpleFrameBackgoundOneIII"
+			stylename="halloween.halloweenQuickExchange" parentStyle="BaseFrame" containerY="30" width="383" height="208"/>
+			
+	</components>
+	<customs>
+		<custom classname="flash.geom.Point" stylename="halloween.viewPos" x="250" y="17" />
+		<custom classname="flash.geom.Point" stylename="halloween.pumpkinPos" x="43" y="197" />
+		<custom classname="flash.geom.Point" stylename="halloween.candyPos1" x="353" y="223" />
+		<custom classname="flash.geom.Point" stylename="halloween.candyPos2" x="148" y="21" />
+		<custom classname="flash.geom.Point" stylename="halloween.listViewPos" x="34" y="257" />
+		<custom classname="flash.geom.Point" stylename="halloween.itemsPos" x="11" y="11" />
+		
+		<custom classname="flash.geom.Point" stylename="halloween.exchangeItemsPos0" x="48" y="133" />
+		<custom classname="flash.geom.Point" stylename="halloween.exchangeItemsPos1" x="107" y="133" />
+		<custom classname="flash.geom.Point" stylename="halloween.exchangeItemsPos2" x="167" y="133" />
+		<custom classname="flash.geom.Point" stylename="halloween.exchangeItemsPos3" x="230" y="133" />
+		<custom classname="flash.geom.Point" stylename="halloween.exchangeItemsPos4" x="370" y="131" />
+		
+		<custom classname="flash.geom.Point" stylename="halloween.listCellPos0" x="0" y="0" />
+		<custom classname="flash.geom.Point" stylename="halloween.listCellPos1" x="223" y="0" />
+		<custom classname="flash.geom.Point" stylename="halloween.listCellPos2" x="0" y="85" />
+		<custom classname="flash.geom.Point" stylename="halloween.listCellPos3" x="223" y="85" />
+		<custom classname="flash.geom.Point" stylename="halloween.listCellPos4" x="0" y="170" />
+		<custom classname="flash.geom.Point" stylename="halloween.listCellPos5" x="223" y="170" />
+	</customs>
+</style>

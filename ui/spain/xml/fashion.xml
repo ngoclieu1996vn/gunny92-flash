@@ -1,0 +1,142 @@
+<style name="fashion" version="1.0.1" source="ui/zh_cn/swf/fashion.swf">
+	<sets>
+		<set stylename="fashion.rankView.rankTxtTF" args="宋体,14,0xffffff,true,,,,,center" type="flash.text.TextFormat" />
+		<set stylename="fashion.rankView.nameTxtTF" args="宋体,14,0xffffff,,,,,,center" type="flash.text.TextFormat" />
+		
+		<set stylename="fashion.rankView.inputTxtTF" args="宋体,12,0xffffff,,,,,,center" type="flash.text.TextFormat" />
+		<!-- <set stylename="fashion.rankView.inputTxtGF" args="0x654512,1,4,4,30" type="flash.filters.GlowFilter" /> -->
+		
+		
+		<set stylename="fashion.corssArea.playerChatBallTF" args="Times New Roman,12,0x000000,false" align="center" letterSpacing="1" type="flash.text.TextFormat" />
+		<set stylename="fashion.corssArea.playerChatBallGF" args="0xffffff,1,2,2,10" type="flash.filters.GlowFilter" />
+		
+		<set stylename="fashion.corssArea.cheersChatBallTF" args="Times New Roman,11,0x000000,false" align="center" letterSpacing="1" type="flash.text.TextFormat" />
+		<set stylename="fashion.corssArea.cheersChatBallGF" args="0xffffff,1,2,2,10" type="flash.filters.GlowFilter" />
+		
+		
+		
+		<set stylename="fashion.corssAreaTop3Rank.nickNameTF" args="宋体,12,0xff00ea,true,,,,,center" type="flash.text.TextFormat" />
+
+		<set stylename="fashion.room.remainTimeTxtTF" args="宋体,14,0xf5e858" type="flash.text.TextFormat"/>
+		<set stylename="fashion.room.remainTimeTxtGF" args="0xc83737,1,4,4,30" type="flash.filters.GlowFilter"/>
+
+	</sets>
+	<customDisplays>
+		 <custom classname="fashion.FashionMainFrame" stylename="fashion.mainFrame" x="84" y="-16"/>
+		 <custom classname="flash.display.Sprite" stylename="fashion.shopContainer" x="15" y="165"/>
+		 <custom classname="flash.display.Sprite" stylename="fashion.fashionContainer" x="20" y="48"/>
+		 <custom classname="fashion.views.FashionAwardFrame" stylename="fashion.awardView" x="0" y="0"/>
+		 <custom classname="fashion.views.FashionCorssAreaRank" stylename="fashion.rankView" x="114" y="60"/>
+		 <custom classname="fashion.views.FashionAlertFrame" stylename="fashion.alertView" x="503" y="42"/>
+		 <custom classname="fashion.views.FashionBuyVoteFrame" stylename="fashion.voteView" x="503" y="42"/>
+		 <custom classname="fashion.views.FashionFreshVoteFrame" stylename="fashion.freshVoteView" x="503" y="42"/>
+		 <custom classname="fashion.views.FashionVoteSubmitFrame" stylename="fashion.submitView" x="503" y="42"/>
+		 <custom classname="morn.core.ex.NumericStepper" stylename="fashion.numStep" x="140" y="59" font="宋体" bold="true" color="0xffffff" size="16" inputWidht="96" skin="asset.ui.numStep.sub1,asset.ui.numStep.input1,asset.ui.numStep.add1" minValue="1"/>
+		 <custom classname="fashion.views.FashionBuySubmitFrame" stylename="fashion.buySubmitView" x="503" y="42"/>
+		 
+		 <custom classname="flash.geom.Point" stylename="fashion.girlsPos" x="-12" y="-191" />
+		 <custom classname="flash.geom.Point" stylename="fashion.boysPos" x="-12" y="-203" />
+		 <custom classname="flash.geom.Point" stylename="fashion.couplesPos" x="-59" y="-204" />
+		 <custom classname="flash.geom.Point" stylename="fashion.leftPos" x="-68" y="-234" />
+		 <custom classname="flash.geom.Point" stylename="fashion.rightPos" x="33" y="-234" />
+		 <custom classname="flash.geom.Point" stylename="fashion.centerPos" x="-22" y="-240" />
+		 <custom classname="flash.geom.Point" stylename="fashion.spacing" x="-16" y ="-20" />
+		 <custom classname="flash.geom.Point" stylename="fashion.defaultSpacing" x="23" y="50" />
+		 <custom classname="flash.geom.Point" stylename="fashion.singleHboxPos" x="118" y="365" />
+		 <custom classname="flash.geom.Point" stylename="fashion.couplesHboxPos" x="188" y="365" />
+		  <custom classname="flash.geom.Point" stylename="fashion.corssAreaTop3HboxPos" x="-22" y="-45" />
+		 
+		 <custom classname="flash.geom.Point" stylename="fashion.girlSpacing" x="100" y="65" />
+		 <custom classname="flash.geom.Point" stylename="fashion.girlSize" x="134" y="176" />
+		 <custom classname="flash.geom.Point" stylename="fashion.boySpacing" x="100" y="65" />
+		 <custom classname="flash.geom.Point" stylename="fashion.boySize" x="134" y="176" />
+		 <custom classname="flash.geom.Point" stylename="fashion.couplesSpacing" x="120" y="65" />
+		 <custom classname="flash.geom.Point" stylename="fashion.couplesSize" x="212" y="277" />
+		 
+		 <custom classname="flash.geom.Point" stylename="fashion.awardView.CloseBtnPos" x="0" y="0" />
+		 
+		 <custom classname="flash.geom.Point" stylename="fashion.rankView.centerPos" x="108" y="116" />
+		 <custom classname="flash.geom.Point" stylename="fashion.rankView.leftPos" x="18" y="116" />
+		 <custom classname="flash.geom.Point" stylename="fashion.rankView.rightPos" x="163" y="116" />
+		 
+		 <custom classname="flash.geom.Point" stylename="fashion.alertFrame.centerPos" x="60" y="35" />
+		 <custom classname="flash.geom.Point" stylename="fashion.alertFrame.leftPos" x="28" y="35" />
+		 <custom classname="flash.geom.Point" stylename="fashion.alertFrame.rightPos" x="96" y="35" />
+		 <custom classname="flash.geom.Point" stylename="fashion.replacePos" x="235" y="43" />
+		 <custom classname="flash.geom.Point" stylename="fashion.signUpPos" x="235" y="43" />
+		 
+		 <custom classname="flash.geom.Point" stylename="fashion.waitPos" x="283" y="480" />
+		 <custom classname="flash.geom.Point" stylename="fashion.waitTimePos" x="515" y="480" />
+		 <custom classname="flash.geom.Point" stylename="fashion.waitTimePos1" x="553" y="480" />
+		 <custom classname="flash.geom.Point" stylename="fashion.openPos" x="276" y="492" />
+		 <custom classname="flash.geom.Point" stylename="fashion.openTimePos" x="393" y="489" />
+		 <custom classname="flash.geom.Point" stylename="fashion.closePos" x="310" y="480" />
+		 <custom classname="flash.geom.Point" stylename="fashion.resultPos" x="335" y="480" />
+		 
+		 <custom classname="flash.geom.Point" stylename="fashion.buyItemPos" x="35" y="52" />
+		 <custom classname="flash.geom.Point" stylename="fashion.corssAreaTopRankPos" x="9" y="-144" />
+		  <custom classname="flash.geom.Point" stylename="fashion.corssAreaTopRank.bottomLight" x="-9" y="138" />
+		 
+		 <custom classname="flash.geom.Point" stylename="fashion.scene.chatBallPos" x="-51" y="-247"/>
+		  <custom classname="flash.geom.Point" stylename="fashion.scene.redPackagePos" x="-63" y="-301"/>
+		  <custom classname="flash.geom.Point" stylename="fashion.scene.cheersChatBallPos" x="-304" y="-157"/>
+		 <custom classname="flash.geom.Point" stylename="fashion.room.remainTimeSpriPos" x="11" y="53"/>
+		 
+		
+		 
+		 
+		 <custom classname="starling.scene.hall.SceneMapGridData" stylename="fashion.room.SceneMapGridData" numX="24"  numY="32"  mapId="4" bgImageW="1508" bgImageH="1021" cellW="64" cellH="32"
+	gridsType="[[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]]" />
+	</customDisplays>
+	<components>
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="dText" textFormatStyle="TF" filterString="GF" />
+		
+		<component classname="com.pickgliss.ui.controls.container.HBox" stylename="fashion.mainFrame.hbox" spacing="-1" x="16" y="132"/>
+		<!-- tab标签页 -->
+		<component classname="com.pickgliss.ui.controls.SelectedButton" stylename="fashion.mainFrame.girlsTabBtn" selectedStyle="asset.fashion.girlSelect" unSelectedStyle="asset.fashion.girlUnselect" displacement="false"/>
+		<component classname="com.pickgliss.ui.controls.SelectedButton" stylename="fashion.mainFrame.boysTabBtn" selectedStyle="asset.fashion.boysSelect" unSelectedStyle="asset.fashion.boysUnselect" displacement="false"/>
+		<component classname="com.pickgliss.ui.controls.SelectedButton" stylename="fashion.mainFrame.couplesTabBtn" selectedStyle="asset.fashion.couplesSelect" unSelectedStyle="asset.fashion.couplesUnselect" displacement="false"/>
+
+		<component classname="com.pickgliss.ui.controls.SelectedButton" stylename="fashion.main.shopBtn" selectedStyle="asset.fashion.shopSelect" unSelectedStyle="asset.fashion.shopUnselect" displacement="false" x="716" y="129"/>
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="fashion.main.awardBtn" backStyle="asset.fashion.awardBtn" enable="true" x="637" y="135"/>
+	
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="fashion.fashionAvatarItem.voteBtn" backStyle="asset.fashion.voteBtn" enable="true"/>
+	
+		<component classname="com.pickgliss.ui.controls.container.HBox" stylename="fashion.fashionView.hbox" spacing="20" x="0" y="0"/>
+		
+		<component classname="com.pickgliss.ui.controls.container.HBox" stylename="fashion.awardView.hbox" spacing="39" x="63" y="94"/>
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="fashion.awardView.closeBtn" backStyle="asset.fashion.closeBtn" enable="true"/>
+		
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="fashion.rankView.rankTxt" textFormatStyle="fashion.rankView.rankTxtTF" autoSize="none" width="75" height="30" x="0"/>
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="fashion.rankView.nameTxt" textFormatStyle="fashion.rankView.nameTxtTF" autoSize="none" width="170" height="30" x="100" />
+		<component classname="com.pickgliss.ui.core.Component" stylename="fashion.rankView.nameTxt.tips"  tipStyle="ddt.view.tips.OneLineTip" tipDirctions="1,2" tipGapH="0" tipGapV="10" x="112" y="0" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="fashion.rankView.tickTxt" textFormatStyle="fashion.rankView.nameTxtTF" autoSize="none" width="88" height="30" x="283"/>
+		<component classname="com.pickgliss.ui.image.ScaleFrameImage" stylename="fashion.rankView.rankImgs" resourceLink="asset.fashion.rank1,asset.fashion.rank2,asset.fashion.rank3" x="25" y="-5"/>
+		<component classname="com.pickgliss.ui.controls.container.VBox" stylename="fashion.rankView.vbox" spacing="-12" x="374" y="127"/>
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="fashion.rankView.inputTxt" textFormatStyle="fashion.rankView.inputTxtTF" autoSize="no" width="65" height="22" y="2"/>
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="fashion.rankView.prevPageBtn" backStyle="asset.fashion.leftPageBtn" filterString="null,lightFilter,null,grayFilter" x="40" y="0" />
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="fashion.rankView.nextPageBtn" backStyle="asset.fashion.rightPageBtn" filterString="null,lightFilter,null,grayFilter" x="145" y="0" />
+		<component classname="uiUtils.SelectPageUI" stylename="fashion.rankView.pageBar" isLoop="false" pageTextStyle="fashion.rankView.inputTxt" prevButtonStyle="fashion.rankView.prevPageBtn" nextButtonStyle="fashion.rankView.nextPageBtn" x="582" y="456" spacing="25"/>
+	
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="fashion.corssAreaTop3Rank.nickName" textFormatStyle="fashion.corssAreaTop3Rank.nickNameTF"  height="30"  x="1" y="-24"/>
+		
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="fashion.corssArea.playerChatBall" 
+			textFormatStyle="fashion.corssArea.playerChatBallTF" filterString="fashion.corssArea.playerChatBallGF" autoSize="none" multiline="true" wordWrap="true" width="135" height="80" x="2" y="5" />
+
+<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="fashion.corssArea.cheersChatBall" 
+			textFormatStyle="fashion.corssArea.cheersChatBallTF" filterString="fashion.corssArea.cheersChatBallGF" autoSize="none" multiline="true" wordWrap="true" width="140" height="90" x="0" y="2" />
+
+
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="fashion.room.remainTimeTxt" textFormatStyle="fashion.room.remainTimeTxtTF" filterString="fashion.room.remainTimeTxtGF" x="0" y="60"/>
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="fashion.room.remainTimeValue" textFormatStyle="fashion.room.remainTimeTxtTF" filterString="fashion.room.remainTimeTxtGF" x="139" y="60"/>
+
+	</components>
+	
+	<bitmaps>
+		<bitmapData resourceLink="asset.fashion.bottomLight" x="-20" y="-54"/>
+		<bitmapData resourceLink="asset.fashion.selectItemBg" x="7" y="-14"/>
+		<bitmapData resourceLink="asset.fashion.roomGetRedPackageBg" x="1" y="11"/>
+		<bitmapData resourceLink="asset.fashion.redpackageSmallClose" x="110" y="-1"/>
+		
+	</bitmaps>
+</style>
