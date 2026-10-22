@@ -1,0 +1,35 @@
+<style name="setting"  version="1.0.1" source="ui/vietnam/swf/setting.swf">
+	<components>
+		<!-- SliderBar -->
+		<component classname="com.pickgliss.ui.controls.BaseButton" stylename="setting.SliderButton" backStyle="asset.ddtsetting.VolumeAdjustButton" width="46" height="30" />
+		<component classname="com.pickgliss.ui.controls.Silder" stylename="setting.BackgroundMusicSlider" thumbStyle="setting.SliderButton" barStyle="asset.ddtsetting.VolumeBarEmpty" progressBarStyle="asset.ddtsetting.VolumeBarFull" maskShowAreaInnerRectString="0,185,0,24,13" thumbShowInnerRectString="-16,185,-4,24,13" width="216" height="24" x="35" y="75" minimum="0" maximum="100" />
+		<component classname="com.pickgliss.ui.controls.Silder" stylename="setting.GameMusicSlider" thumbStyle="setting.SliderButton" barStyle="asset.ddtsetting.VolumeBarEmpty" progressBarStyle="asset.ddtsetting.VolumeBarFull" maskShowAreaInnerRectString="0,185,0,24,13" thumbShowInnerRectString="-16,185,-4,24,13" width="216" height="24" x="35" y="150" minimum="0" maximum="100" />
+		<component classname="com.pickgliss.ui.controls.Silder" stylename="setting.voiceChatSlider" thumbStyle="setting.SliderButton" barStyle="asset.ddtsetting.VolumeBarEmpty" progressBarStyle="asset.ddtsetting.VolumeBarFull" maskShowAreaInnerRectString="0,185,0,24,13" thumbShowInnerRectString="-16,185,-4,24,13" width="216" height="24" x="35" y="224" minimum="0" maximum="100" />
+		<component classname="com.pickgliss.ui.controls.Silder" stylename="setting.micSlider" thumbStyle="setting.SliderButton" barStyle="asset.ddtsetting.VolumeBarEmpty" progressBarStyle="asset.ddtsetting.VolumeBarFull" maskShowAreaInnerRectString="0,185,0,24,13" thumbShowInnerRectString="-16,185,-4,24,13" width="216" height="24" x="35" y="300" minimum="0" maximum="100" />
+	
+	
+		<!-- 	快捷键设置 -->
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton"  stylename="setting.keySettingBtn" backStyle="ddtsetting.keyset.keysettingBtn"  x="201" y="309"/>
+		<component classname="com.pickgliss.ui.image.MutipleImage"
+			stylename="setting.KeySetFrameBg" resourceLink="SimpleFrameBackgoundOne,asset.core.btmBimap"
+			imageRectString=",17|17|42|17|4" />
+		<component classname="setting.view.KeySetFrame" backStyle="setting.KeySetFrameBg"
+			stylename="setting.keySetFrame" buttonToBottom="6" titleStyle="FrameTitleTextStyle"
+			titleOuterRectPosString="18,10,5" closeInnerRectString="44,6,3,30,14"
+			width="400" height="150" containerX="7" containerY="9" />
+		<component classname="com.pickgliss.ui.controls.container.HBox" stylename="keySetHBox" spacing="-8" x="12" y="36" />
+		<component clasname="com.pickgliss.ui.controls.TextButton"  stylename="setting.KeySet.SubmitButton" parentStyle="core.simplebt"
+			 x="72" y="87" />
+		<component clasname="com.pickgliss.ui.controls.TextButton" stylename="setting.KeySet.CancelButton" parentStyle="core.simplebt"
+			x="239" y="87" />
+	</components>
+	<customDisplay>
+		<custom classname="flash.geom.Point" stylename="ddtsetting.KeySet.KeyTL" x="4" y="17" />
+		<custom classname="flash.geom.Point" stylename="ddtsetting.KeySet.KeyRect" x="34" y="32" />
+	</customDisplay>
+	
+	<bitmaps>
+		<bitmapData resourceLink="ddtsetting.keyset.numAsset" x="41" y="37" />
+		<bitmapData resourceLink="ddtsetting.keyset.glowAsset" width="54" height="53" x="-6" y="-6" />
+	</bitmaps>
+</style>

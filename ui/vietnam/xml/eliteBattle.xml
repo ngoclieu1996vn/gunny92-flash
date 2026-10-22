@@ -1,0 +1,7 @@
+<style name="eliteBattle" version="5.1.0" source="ui/vietnam/swf/eliteBattle.swf">
+
+	<customs>
+		<custom classname="flash.geom.Point" stylename="eliteBattle.skillViewPos"
+			x="348" y="88" />
+	</customs>
+</style>

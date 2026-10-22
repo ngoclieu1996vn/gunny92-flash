@@ -1,0 +1,85 @@
+<style name="loginDeviceRaffle" version="6.4.0" source="ui/vietnam/swf/loginDeviceRaffle.swf">
+	<components>
+		<component classname="LoginDeviceRaffle.LoginDeviceRaffleFrame" stylename="LoginDeviceRaffle.LoginDeviceRafflemain" 
+			titleStyle="FrameTitleTextStyle" closestyle="LoginDeviceRaffle.mainframe.closebt" titleOuterRectPosString="15,10,5" 
+			containerX="0" containerY="0" escEnable="true" closeInnerRectString="690,42,30,42,13" width="730" height="447" />
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="LoginDeviceRaffle.mainframe.closebt"
+			backStyle="loginDeviceRaffle.mainFrame.closeBtn"/>	
+			
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="loginDeviceRaffle.mainframe.helpbt"
+			backStyle="loginDeviceRaffle.mainFrame.helpBtn" x="668" y="22" />
+		
+	<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="loginDeviceRaffle.mainFrame.startBtn" backStyle="loginDeviceRaffle.mainFrame.startBtnBG" x="172" y="164"/>
+	<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="loginDeviceRaffle.mainFrame.startAllBtn" backStyle="loginDeviceRaffle.mainFrame.startAllBtnBG" x="172" y="218"/>
+	<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="loginDeviceRaffle.mainFrame.stopAutoBtn" backStyle="loginDeviceRaffle.mainFrame.stopAutoBtnBG" x="172" y="218"/>
+	
+	<component classname="com.pickgliss.ui.controls.container.VBox" stylename="loginDeviceRaffle.recordView.Vbox" x="0" y="0" spacing="0" />
+	
+	
+	<component classname="com.pickgliss.ui.controls.ScrollPanel" stylename="loginDeviceRaffle.recordViewList" parentStyle="core.ScrollPanel"
+		hScrollProxy="2" vScrollProxy="1" width="260" height="270" x="450" y="86" vUnitIncrement="10" />
+		
+	<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="loginDeviceRaffle.activityData.Txt" 
+		textFormatStyle="loginDeviceRaffle.activityData.Txt.tf" filterString="loginDeviceRaffle.activityData.Txt.gf" x="363" y="412"/>
+		
+	</components>
+	<sets>
+	
+		<set type="flash.text.TextFormat" stylename="loginDeviceRaffle.activityData.Txt.tf" args="Arial,12,0xddc762,true"/>
+		<set type="flash.filters.GlowFilter" stylename="loginDeviceRaffle.activityData.Txt.gf" args="0x1a0000,1,2,2,10"/>
+	</sets>
+	<customs>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.bottomBack.mc.pos" x="63" y="237"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.pointerbackhalo.mc.pos" x="147" y="96"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.pointer.mc.pos" x="224" y="219"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.lotterycount.pos" x="495" y="14"/>
+		
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.0" x="236" y="47"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.1" x="312" y="86"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.2" x="347" y="156"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.3" x="349" y="236"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.4" x="308" y="307"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.5" x="238" y="348"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.6" x="158" y="345"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.7" x="89" y="306"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.8" x="50" y="234"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.9" x="50" y="159"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.10" x="85" y="84"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.prizeAreacell.pos.11" x="159" y="47"/>
+		
+		
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.0" x="263" y="73"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.1" x="337" y="111"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.2" x="369" y="182"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.3" x="372" y="263"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.4" x="334" y="331"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.5" x="265" y="372"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.6" x="182" y="370"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.7" x="115" y="332"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.8" x="74" y="258"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.9" x="75" y="184"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.10" x="108" y="111"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshinemc.pos.11" x="185" y="72"/>
+		
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.0" x="241" y="51"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.1" x="316" y="89"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.2" x="351" y="160"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.3" x="352" y="240"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.4" x="312" y="311"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.5" x="241" y="352"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.6" x="162" y="350"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.7" x="92" y="310"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.8" x="53" y="238"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.9" x="54" y="163"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.10" x="89" y="88"/>
+		<custom classname="flash.geom.Point" stylename="loginDeviceRaffle.cellshineobject.pos.11" x="162" y="51"/>
+		
+	</customs>
+	<bitmaps>
+		<bitmapData resourceLink="loginDeviceRaffle.mainFrame.pointerbigcircleback" x="103" y="95"/>
+		<bitmapData resourceLink="loginDeviceRaffle.mainFrame.startsmallcircleback" x="167" y="159"/>
+	</bitmaps>
+	<customDisplay>
+		
+	</customDisplay>
+</style>

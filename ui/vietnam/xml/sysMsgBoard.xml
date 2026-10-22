@@ -1,0 +1,22 @@
+<style name="redPackage" version="6.4.0" source="ui/vietnam/swf/redPackage.swf">
+	<components>
+	<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="sysMsgBoard.PackBtn" backStyle="ast.sysmsg.btnPack,ast.sysmsg.btnShow" x="122" y="273"/>
+	
+	<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="sysMsgCell.txt" 
+		textFormatStyle="sysMsgBoard.type0.tf,sysMsgBoard.type1.tf" filterString="sysMsgBoard.type0.gf,sysMsgBoard.type1.gf"
+			x="30" y="3" width="445" height="22"/>
+	</components>
+	<sets>
+		<set stylename="sysMsgBoard.type0.tf" args="Arial,12,0xff00a6,,,,,,left" type="flash.text.TextFormat" />
+		<set stylename="sysMsgBoard.type0.gf" args="0x1d0214,1,4,4,30" type="flash.filters.GlowFilter"/>
+		
+		<set stylename="sysMsgBoard.type1.tf" args="Arial,14,0xfff8c9,,,,,,left" type="flash.text.TextFormat" />
+		<set stylename="sysMsgBoard.type1.gf" args="0x5a2200,1,4,4,30" type="flash.filters.GlowFilter"/>
+	</sets>
+	<customs>
+	</customs>
+	<bitmaps>
+	</bitmaps>
+	<customDisplay>
+	</customDisplay>
+</style>

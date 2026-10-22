@@ -1,0 +1,93 @@
+<style name="oldplayerregression" version="2.0.1" source="ui/vietnam/swf/oldplayerregression.swf">
+	<sets>
+		<set type="flash.text.TextFormat" stylename="oldplayerregression.time.TF" args="Arial,16,0xffeebf,true"/>
+		
+		<set type="flash.text.TextFormat" stylename="oldplayerregression.day.TF" args="Arial,20,0xffeebf,true"/>
+		<set type="flash.filters.GlowFilter" stylename="oldplayerregression.day.GF" args="0x9c3833,1,4,4,30"/>
+		
+		<set type="flash.text.TextFormat" stylename="oldplayerregression.money.TF" args="Arial,20,0xffeebf,true"/>
+		<set type="flash.filters.GlowFilter" stylename="oldplayerregression.money.GF" args="0x9c3833,1,4,4,30"/>
+		
+		<set type="flash.text.TextFormat" stylename="oldplayerregression.showDay.TF" args="Arial,20,0xffeebf,true"/>
+		<set type="flash.filters.GlowFilter" stylename="oldplayerregression.showDay.GF" args="0x9c3833,1,4,4,30"/>
+		
+		<set type="flash.text.TextFormat" stylename="oldplayerregression.count1.TF" args="Arial,20,0xffeebf,true"/>
+		<set type="flash.filters.GlowFilter" stylename="oldplayerregression.count1.GF" args="0x9c3833,1,4,4,30"/>
+		
+		<set type="flash.text.TextFormat" stylename="oldplayerregression.count2.TF" args="Arial,20,0xffeebf,true"/>
+		<set type="flash.filters.GlowFilter" stylename="oldplayerregression.count2.GF" args="0x9c3833,1,4,4,30"/>
+		
+		<set type="flash.text.TextFormat" stylename="oldplayerregression.count3.TF" args="Arial,20,0xffeebf,true"/>
+		<set type="flash.filters.GlowFilter" stylename="oldplayerregression.count3.GF" args="0x9c3833,1,4,4,30"/>
+	
+	</sets>
+	<customDisplay>
+		
+	</customDisplay>
+	<components>
+		<component classname="oldplayerregression.views.oldplayerregressionView" stylename="oldplayerregression.oldplayerregressionView" backStyle="SimpleFrameBackgoundOne" 
+			parentStyle="BaseFrame" closestyle="core.closebt" closeInnerRectString="44,22,6,30,14"
+			containerX="15" containerY="38" moveInnerRectString="0,30,0,30,1"
+			width="699" height="432" moveEnable="false" escEnable="true" />
+			
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="oldplayerregression.bg" 
+			resourceLink="asset.oldplayerregression.bg" width="665" height="383" x="1" y="2"/>	
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="oldplayerregression.txt1" 
+			resourceLink="asset.oldplayerregression.txt1" width="217" height="33" x="373" y="26"/>		
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="oldplayerregression.txt2" 
+			resourceLink="asset.oldplayerregression.txt2" width="335" height="65" x="4" y="30"/>		
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="oldplayerregression.txt3" 
+			resourceLink="asset.oldplayerregression.txt3" width="232" height="39" x="33" y="118"/>
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="oldplayerregression.txt4" 
+			resourceLink="asset.oldplayerregression.txt4" width="229" height="35" x="373" y="26"/>
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="oldplayerregression.txt5" 
+			resourceLink="asset.oldplayerregression.txt5" width="333" height="69" x="4" y="30"/>
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="oldplayerregression.txt6" 
+			resourceLink="asset.oldplayerregression.txt6" width="244" height="39" x="33" y="118"/>	
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="oldplayerregression.txt7" 
+			resourceLink="asset.oldplayerregression.txt7" width="312" height="69" x="4" y="30"/>	
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="oldplayerregression.txt8" 
+			resourceLink="asset.oldplayerregression.txt8" width="251" height="39" x="33" y="118"/>	
+		
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="oldplayerregression.timeTxt" 
+			textFormatStyle="oldplayerregression.time.TF"
+			x="5" y="8" width="170" height="20"/>
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="oldplayerregression.dayTxt" 
+			textFormatStyle="oldplayerregression.day.TF" filterString="oldplayerregression.day.GF"
+			x="224" y="66" width="170" height="20"/>	
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="oldplayerregression.moneyTxt" 
+			textFormatStyle="oldplayerregression.money.TF" filterString="oldplayerregression.money.GF"
+			x="408" y="107" width="170" height="20"/>	
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="oldplayerregression.showDayTxt" 
+			textFormatStyle="oldplayerregression.showDay.TF" filterString="oldplayerregression.showDay.GF"
+			x="239" y="114" width="170" height="20"/>	
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="oldplayerregression.count1Txt" 
+			textFormatStyle="oldplayerregression.count1.TF" filterString="oldplayerregression.count1.GF"
+			x="374" y="264" width="170" height="20"/>	
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="oldplayerregression.count2Txt" 
+			textFormatStyle="oldplayerregression.count2.TF" filterString="oldplayerregression.count2.GF"
+			x="479" y="264" width="170" height="20"/>	
+		<component classname="com.pickgliss.ui.text.FilterFrameText" stylename="oldplayerregression.count3Txt" 
+		 	textFormatStyle="oldplayerregression.count3.TF" filterString="oldplayerregression.count3.GF"
+			x="585" y="264" width="170" height="20"/>	
+			
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="oldplayerregression.getBtn"
+			backStyle="asset.oldplayerregression.btn" width="150" height="49" x="413" y="311"/>
+			
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="oldplayerregression.getShowBtn"
+			resourceLink="asset.oldplayerregression.btn1" width="149" height="49" x="413" y="311"/>
+			
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="asset.oldplayerregression.img" 
+			resourceLink="asset.oldplayerregression.img" width="86" height="69" x="338" y="184"/>
+			
+		<component classname="com.pickgliss.ui.controls.BaseButton" stylename="oldplayerregression.HelpButton" 
+			x="580" y="-32" backStyle="asset.ddtcore.helpbuttonSmall" />
+	</components>
+	
+	<bitmaps>
+		<bitmapData resourceLink="asset.oldplayerregression.bg"/>
+		<bitmapData resourceLink="asset.oldplayerregression.btn"/>
+		<bitmapData resourceLink="asset.oldplayerregression.btn1"/>
+	
+	</bitmaps>
+</style>

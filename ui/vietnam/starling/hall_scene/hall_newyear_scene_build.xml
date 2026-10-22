@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:2dbf83c52196a5baa5b3b89c704fbdea:1/1$ -->
+<TextureAtlas imagePath="hall_newyear_scene_build.png">
+    <SubTexture name="004" x="1720" y="463" width="160" height="246"/>
+    <SubTexture name="005" x="467" y="780" width="85" height="51" frameX="0" frameY="-4" frameWidth="85" frameHeight="55"/>
+    <SubTexture name="006" x="349" y="780" width="116" height="51" frameX="0" frameY="-2" frameWidth="116" frameHeight="53"/>
+    <SubTexture name="hall_new_auditorium" x="1369" y="463" width="349" height="297"/>
+    <SubTexture name="hall_new_auditorium_name" x="2" y="987" width="121" height="32"/>
+    <SubTexture name="hall_new_dungeon" x="1369" y="762" width="371" height="260"/>
+    <SubTexture name="hall_new_dungeon_name" x="125" y="987" width="149" height="28"/>
+    <SubTexture name="hall_new_fight" x="2" y="463" width="345" height="381"/>
+    <SubTexture name="hall_new_fight_name" x="381" y="987" width="142" height="27"/>
+    <SubTexture name="hall_new_first" x="786" y="780" width="132" height="103" frameX="-1" frameY="0" frameWidth="134" frameHeight="103"/>
+    <SubTexture name="hall_new_pool_name" x="525" y="987" width="113" height="27"/>
+    <SubTexture name="hall_new_rankbg" x="2" y="846" width="606" height="139"/>
+    <SubTexture name="hall_new_road" x="349" y="463" width="1018" height="315"/>
+    <SubTexture name="hall_new_sea" x="2" y="2" width="2013" height="459"/>
+    <SubTexture name="hall_new_second" x="786" y="885" width="102" height="79" frameX="-1" frameY="-1" frameWidth="104" frameHeight="81"/>
+    <SubTexture name="hall_new_secret" x="640" y="780" width="144" height="240"/>
+    <SubTexture name="hall_new_secret_name" x="276" y="987" width="103" height="28"/>
+    <SubTexture name="hall_new_third" x="890" y="885" width="105" height="70" frameX="0" frameY="0" frameWidth="107" frameHeight="70"/>
+</TextureAtlas>

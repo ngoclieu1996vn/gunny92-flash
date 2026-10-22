@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:04ba4ee70f6819811ed9489d6d399634:1/1$ -->
+<TextureAtlas imagePath="fashion.png">
+    <SubTexture name="chatball_bg" x="1508" y="0" width="136" height="107"/>
+    <SubTexture name="fashionScene" x="0" y="0" width="1508" height="1021"/>
+</TextureAtlas>

@@ -1,0 +1,595 @@
+<style name="bank" version="1.0.1" source="ui/vietnam/swf/bank.swf">
+	<sets>
+		<!--Filter -->
+		<set args="0xC04A00,1,2,2,1000" stylename="banklocked.T_g1"
+			type="flash.filters.GlowFilter" />
+		<set args="0xFFFFFF,1,4,4,800" stylename="banklocked.T_g2"
+			type="flash.filters.GlowFilter" />
+		<!--TextFormat -->
+		<set stylename="banklocked.T_1" args="Arial,12,0xFBF202" type="flash.text.TextFormat" />
+		<set stylename="banklocked.TF3" args="Arial,12,0xfff2b2" type="flash.text.TextFormat" />
+		<set stylename="banklocked.TF4" args="Arial,14,0xe20000,true"
+			type="flash.text.TextFormat" />
+		<set stylename="banklocked.TF5" args="Arial,14,0xffd956,true"
+			type="flash.text.TextFormat" />
+		<set stylename="banklocked.TF6" args="Arial,14,0xffffff" type="flash.text.TextFormat" />
+		<set stylename="banklocked.TF7" args="Arial,14,0xffffff" type="flash.text.TextFormat" />
+
+		<set stylename="banklocked.T_2" args="Arial,12,0xfffbe9,true"
+			type="flash.text.TextFormat" />
+		<set stylename="banklocked.T_2_1" args="Arial,14,0xFBF202" type="flash.text.TextFormat" />
+		<set stylename="banklocked.T_3" args="Arial,10,0xe20000,false"
+			type="flash.text.TextFormat" />
+		<set stylename="banklocked.T_3_1" args="Arial,12,0xe20000,true"
+			type="flash.text.TextFormat" />
+		<set stylename="banklocked.T_5_5" args="Arial,10,0xe20000,true"
+			type="flash.text.TextFormat" />
+
+		<set stylename="banklocked.Input_1" args="Arial,14,0xfff8d6" type="flash.text.TextFormat" />
+		<set stylename="banklocked.T_4" args="Arial,13,0xFF0000,true"
+			type="flash.text.TextFormat" />
+		<set stylename="banklocked.T_5" args="Arial,15,0xEA0B14,true"
+			type="flash.text.TextFormat" />
+
+		<set stylename="banklocked.G_1" args="0x744a16,1,4,4,30" type="flash.filters.GlowFilter" />
+		<set stylename="banklocked.G_2" args="0xfff8e5,2,4,4,30" type="flash.filters.GlowFilter" />
+		<set stylename="banklocked.G_3" args="0x8b0000,2,4,4,30" type="flash.filters.GlowFilter" />
+		<set stylename="banklocked.G_4" args="0xfff8e5,1,4,4,30" type="flash.filters.GlowFilter" />
+
+		<set stylename="banklocked.GF5" args="0x6f401a,2,2,2,10" type="flash.filters.GlowFilter" />
+		<set stylename="banklocked.GF6" args="0xe20000,2,2,2,10" type="flash.filters.GlowFilter" />
+		<set stylename="banklocked.GF7" args="0xe20000,2,2,2,10" type="flash.filters.GlowFilter" />
+		<set stylename="banklocked.Input_2" args="0x4b270d,1,4,4,30"
+			type="flash.filters.GlowFilter" />
+
+		<set stylename="banklocked.lightRedTxtGF" args="0xfff0d9,2,4,4,30"
+			type="flash.filters.GlowFilter" />
+		<set stylename="banklocked.deepRedTxtTF" args="Arial,14,0xfffef4,true,,,,,center"
+			type="flash.text.TextFormat" />
+		<set stylename="banklocked.whiteTxtGF" args="0x7c4519,2,4,4,30"
+			type="flash.filters.GlowFilter" />
+		<set stylename="banklocked.deepRedTxtGF" args="0xaa2828,2,4,4,30"
+			type="flash.filters.GlowFilter" />
+		<set stylename="banklocked.whiteNumTF" args="Arial,14,0xfff4d4,true,,,,,center"
+			type="flash.text.TextFormat" />
+		<set stylename="banklocked.whiteTxtTF" args="Arial,14,0xfff4d4,true"
+			type="flash.text.TextFormat" />
+		<set stylename="banklocked.lightRedTxtTF" args="Arial,14,0xff0606,true"
+			type="flash.text.TextFormat" />
+		<set stylename="banklocked.TF8" args="Arial,14,0xffffff" type="flash.text.TextFormat" />
+		<set stylename="banklocked.GF8" args="0xe20000,2,2,2,10" type="flash.filters.GlowFilter" />
+
+	</sets>
+	<components>
+		<!-- explainMap -->
+
+		<!--Image -->
+		<component classname="com.pickgliss.ui.image.Image"
+			stylename="banklocked.subtitle" resourceLink="asset.banklocked.subtitleAsset"
+			x='-5' />
+		<!-- 提示框背景 -->
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage"
+			stylename="ddtbanklocked.BG2" parentStyle="core.bg6920" width="270"
+			height="235" y="5" scaleGridString="5,10,80,20" />
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage"
+			stylename="ddtbanklocked.BG3" parentStyle="core.bg6920" width="270"
+			height="265" y="5" scaleGridString="5,10,80,20" />
+		<!--button -->
+		<!-- 提示框button -->
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.setPassBtn" y='354' parentStyle='core.simplebt'
+			x="0" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.removeLockBtn" useLogID="109" parentStyle='banklocked.setPassBtn'
+			x='129' />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.updatePassBtn" useLogID="110" parentStyle='banklocked.setPassBtn'
+			x='251' />
+		<!--设置密码1-3步框button -->
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.nextBtn1" parentStyle='banklocked.setPassBtn'
+			x='115' y='180' enable='true' />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.backBtn1" parentStyle='banklocked.setPassBtn'
+			x='43' y='320' enable='true' />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.nextBtn2" parentStyle='banklocked.setPassBtn'
+			x='190' y='320' enable='true' />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.completeBtn" parentStyle='banklocked.setPassBtn'
+			x='110' y='320' enable='true' />
+		<!--解锁框button -->
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.certainBtn" parentStyle='banklocked.setPassBtn'
+			x='60' y='132' enable='true' />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.deselectBtn" parentStyle='banklocked.setPassBtn'
+			x='190' y='132' enable='true' />
+		<!--修改密码框button -->
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.updateBtn" parentStyle='banklocked.setPassBtn'
+			x='37' y='250' enable='true' />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.deselectBtn5" parentStyle='banklocked.setPassBtn'
+			x='160' y='250' enable='true' />
+		<!--删除密码框button -->
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.delBtn" parentStyle='banklocked.setPassBtn' x='20'
+			y='282' enable='true' />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.deselectBtn6" parentStyle='banklocked.setPassBtn'
+			x='190' y='282' enable='true' />
+		<!--再次设置密码框button -->
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.completeBtn7" parentStyle='banklocked.setPassBtn'
+			x='110' y='180' enable='true' />
+		<!--Text -->
+		<!--设置密码1步框Tex -->
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text1_0" textFormatStyle="banklocked.T_3_1"
+			filterString="banklocked.G_2" y='3' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text1_1" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='9' y='16' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text1_2" textFormatStyle="banklocked.T_3"
+			filterString="banklocked.G_2" x='121' y='18' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text1_3" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='9' y='88' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text1_4" textFormatStyle="banklocked.T_3"
+			filterString="banklocked.G_2" x='118' y='89' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text1_5" textFormatStyle="banklocked.T_3_1"
+			filterString="banklocked.G_2" x='69' y='153' />
+		<!--设置密码2步框Text -->
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text2_0" parentStyle='banklocked.text1_0' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text2_1" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='10' y='16' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text2_2" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='10' y='77' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text2_3" textFormatStyle="banklocked.T_3"
+			filterString="banklocked.G_2" x='76' y='87' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text2_4" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='10' y='150' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text2_5" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='10' y='210' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text2_6" textFormatStyle="banklocked.T_3"
+			filterString="banklocked.G_2" x='77' y='210' />
+
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text2_7" textFormatStyle="banklocked.T_4"
+			filterString="banklocked.G_2" x='0' y='262' width='300' wordWrap='true' />
+		<!--设置密码3步框Text -->
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text3_0" parentStyle='banklocked.text1_0' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text3_1" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='10' y='26' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text3_2" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='10' y='86' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text3_3" textFormatStyle="banklocked.TF3"
+			filterString="banklocked.G_3" x='50' y='58' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text3_4" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='10' y='150' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text3_5" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='10' y='210' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text3_6" textFormatStyle="banklocked.TF3"
+			filterString="banklocked.G_3" x='50' y='180' />
+
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text3_7" textFormatStyle="banklocked.T_4"
+			filterString="banklocked.G_2" x='0' y='273' width='300' wordWrap='true' />
+		<!--解锁密码框Text4 -->
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text4_0" textFormatStyle="banklocked.T_5"
+			filterString="banklocked.T_g2" x='58' y='21' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text4_1" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='30' y='67' />
+		<!--修改密码框Text5 -->
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text5_1" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='11' y='16' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text5_2" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='9' y='83' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text5_3" textFormatStyle="banklocked.T_3"
+			filterString="banklocked.G_2" x='118' y='83' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text5_4" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x='11' y='150' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text5_5" textFormatStyle="banklocked.T_5_5"
+			filterString="banklocked.G_2" x='65' y='212' />
+		<!--删除密码框Text -->
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text6_1" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x="10" y='10' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text6_2" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x="10" y='55' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text6_3" textFormatStyle="banklocked.TF3"
+			filterString="banklocked.G_3" x='11' y='32' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text6_4" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x="10" y='120' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text6_5" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x="10" y='170' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text6_6" textFormatStyle="banklocked.TF3"
+			filterString="banklocked.G_3" x='8' y='145' />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text6_7" textFormatStyle="banklocked.TF4"
+			filterString="banklocked.G_4" x='12' y='229' autoSize="none"
+			wordWrap="true" width="260" height="40" />
+		<!--再次设置密码框Tex -->
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text7_0" y='3' textFormatStyle="banklocked.T_1"
+			filterString="banklocked.T_g1" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text7_1" x='1' y='25' textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text7_2" x='100' y='26' textFormatStyle="banklocked.T_3"
+			filterString="banklocked.G_2" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text7_3" y='96' textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text7_4" x='102' y='97' textFormatStyle="banklocked.T_3"
+			filterString="banklocked.G_2" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.text7_5" x='59' y='155' textFormatStyle="banklocked.T_3"
+			filterString="banklocked.G_2" />
+
+		<!--TextInput -->
+		<!--设置密码1-3步框TextInput -->
+		<component classname="com.pickgliss.ui.image.Scale9CornerImage"
+			stylename="banklocked.InputTextbackAsset" parentStyle="core.Scale9CornerImage.scale9CornerImageInputBG"
+			width="171" height="33" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.InputTextStyle" textFormatStyle="banklocked.Input_1"
+			filterString="banklocked.Input_2" />
+
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput1" x='85' y='48' width="171" height="33"
+			backStyle="banklocked.InputTextbackAsset" focusBackStyle="banklocked.InputTextbackAsset"
+			textStyle="banklocked.InputTextStyle" focusBackgoundInnerRectString="0,0,0,0,-1"
+			textInnerRectString="7,10,8,2,0" displayAsPassword='true' maxChars='14'
+			multiline='false' />
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput2" parentStyle='banklocked.textInput1'
+			y='118' />
+
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput2_1" x='50' y='107' width="238"
+			height="33" backStyle="banklocked.InputTextbackAsset" focusBackStyle="banklocked.InputTextbackAsset"
+			textStyle="banklocked.InputTextStyle" focusBackgoundInnerRectString="0,0,0,0,-1"
+			textInnerRectString="7,10,8,2,0" maxChars='40' multiline='false'
+			autoSize='none' />
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput2_2" y='230' parentStyle="banklocked.textInput2_1" />
+
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput3_1" x='50' y='110' width="220"
+			height="33" backStyle="banklocked.InputTextbackAsset" focusBackStyle="banklocked.InputTextbackAsset"
+			textStyle="banklocked.InputTextStyle" focusBackgoundInnerRectString="0,0,0,0,-1"
+			textInnerRectString="7,10,8,2,0" maxChars='40' multiline='false'
+			autoSize='none' />
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput3_2" y='230' parentStyle="banklocked.textInput3_1" />
+		<!--解锁框密码TextInput -->
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput4" x='125' y='60' width="171" height="33"
+			backStyle="banklocked.InputTextbackAsset" focusBackStyle="banklocked.InputTextbackAsset"
+			textStyle="banklocked.InputTextStyle" focusBackgoundInnerRectString="0,0,0,0,-1"
+			textInnerRectString="7,10,8,2,0" displayAsPassword='true' maxChars='14'
+			multiline='false' />
+		<!--修改密码框TextInput -->
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput5_1" x='39' y='42' width="216" height="33"
+			backStyle="banklocked.InputTextbackAsset" focusBackStyle="banklocked.InputTextbackAsset"
+			textStyle="banklocked.InputTextStyle" focusBackgoundInnerRectString="0,0,0,0,-1"
+			textInnerRectString="7,10,8,2,0" displayAsPassword='true' maxChars='14'
+			multiline='false' />
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput5_2" x='39' y='111' width="216"
+			height="33" backStyle="banklocked.InputTextbackAsset" focusBackStyle="banklocked.InputTextbackAsset"
+			textStyle="banklocked.InputTextStyle" focusBackgoundInnerRectString="0,0,0,0,-1"
+			textInnerRectString="7,10,8,2,0" displayAsPassword='true' maxChars='14'
+			multiline='false' />
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput5_3" x='39' y='179' width="216"
+			height="33" backStyle="banklocked.InputTextbackAsset" focusBackStyle="banklocked.InputTextbackAsset"
+			textStyle="banklocked.InputTextStyle" focusBackgoundInnerRectString="0,0,0,0,-1"
+			textInnerRectString="7,10,8,2,0" displayAsPassword='true' maxChars='14'
+			multiline='false' />
+		<!--删除密码框TextInput -->
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput6_1" x='43' y='80' width="220" height="33"
+			backStyle="banklocked.InputTextbackAsset" focusBackStyle="banklocked.InputTextbackAsset"
+			textStyle="banklocked.InputTextStyle" focusBackgoundInnerRectString="0,0,0,0,-1"
+			textInnerRectString="7,10,8,2,0" maxChars='40' multiline='false'
+			autoSize='none' />
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput6_2" y='195' parentStyle="banklocked.textInput6_1" />
+		<!--再次设置密码框TextInput -->
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput7_1" x='85' y='48' width="171" height="33"
+			backStyle="banklocked.InputTextbackAsset" focusBackStyle="banklocked.InputTextbackAsset"
+			textStyle="banklocked.InputTextStyle" focusBackgoundInnerRectString="0,0,0,0,-1"
+			textInnerRectString="7,10,8,2,0" displayAsPassword='true' maxChars='14'
+			multiline='false' />
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.textInput7_2" y='118' parentStyle='banklocked.textInput7_1' />
+
+		<!--提示框 -->
+		<component classname="banklocked.ExplainFrame" stylename="banklocked.explainFrame"
+			backStyle="SimpleFrameBackgoundOneIII" closestyle="core.closebt"
+			closeInnerRectString="44,6,3,30,14" titleStyle="FrameTitleTextStyle"
+			titleOuterRectPosString="10,11,5" containerX="20" containerY="40"
+			width="478" height="520" moveInnerRectString="0,30,0,30,1" escEnable='true' />
+		<!--设置密码1-3步框 -->
+		<component classname="bank.view.bankLock.BankSetPassFrame1"
+			stylename="banklocked.setPassFrame1" backStyle="SimpleFrameBackgoundOneIII"
+			closestyle="core.closebt" closeInnerRectString="44,10,4,30,14"
+			titleStyle="FrameTitleTextStyle" titleOuterRectPosString="10,11,5"
+			containerX="20" containerY="40" width="340" height="275"
+			moveInnerRectString="0,30,0,30,1" escEnable='true' />
+		<component classname="bank.view.bankLock.BankSetPassFrame2"
+			stylename="banklocked.setPassFrame2" parentStyle='banklocked.setPassFrame1'
+			height="415" />
+		<component classname="bank.view.bankLock.BankSetPassFrame3"
+			stylename="banklocked.setPassFrame3" parentStyle='banklocked.setPassFrame1'
+			height="415" />
+		<component classname="bank.view.bankLock.BankSetPassFrame4"
+			stylename="banklocked.setPassFrame4" parentStyle='banklocked.setPassFrame1'
+			height="415" />
+		<!--解锁框 -->
+		<component classname="bank.view.bankLock.BankLockedGetFrame"
+			stylename="banklocked.bagLockedGetFrame" parentStyle='banklocked.explainFrame'
+			width="375" height="228" titleOuterRectPosString="12,11,5"
+			moveEnable="false" />
+		<!--修改密码框 -->
+		<component classname="bank.view.bankLock.BankUpdatePassFrame"
+			stylename="banklocked.updatePassFrame" parentStyle='banklocked.explainFrame'
+			backStyle="SimpleFrameBackgoundOneIII" width="312" height="346" />
+		<!--删除密码框 -->
+		<component classname="bank.view.bankLock.BankLockDelPassFrame"
+			stylename="banklocked.delPassFrame" parentStyle='banklocked.setPassFrame1'
+			width="312" height="378" />
+		<!--再次设置密码框 -->
+		<component classname="banklocked.SetPassFrameNew" stylename="banklocked.setPassFrameNew"
+			parentStyle='banklocked.setPassFrame1' width="340" height="275" />
+
+		<!--ComboBox -->
+		<component classname="com.pickgliss.ui.controls.ComboBox"
+			stylename="banklocked.bag_Combox1" parentStyle="core.Combox2"
+			textInnerRectString="10,25,5,0,0" textStyle="banklocked.bag_txt" x='57'
+			y='35' width="238" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.bag_txt" filterString="P_g1" textFormatStyle="PFormat_21"
+			autoSize="none" width="214" height="26" />
+
+		<component classname="com.pickgliss.ui.controls.ComboBox"
+			stylename="banklocked.bag_Combox2" y='170' parentStyle='banklocked.bag_Combox1' />
+		<!--ListPanel -->
+		<component classname="com.pickgliss.ui.image.ScaleFrameImage"
+			stylename="banklocked.bag_TextBgAsset"
+			resourceLink="asset.banklocked.textBgOutAsset,asset.banklocked.textBgOverAsset,asset.banklocked.textBgOverAsset" />
+		<component classname="com.pickgliss.ui.controls.ListPanel"
+			stylename="banklocked.bag_ListPanel" viewportInnerRectString="0,0,0,0,5"
+			factoryStyle="com.pickgliss.ui.controls.cell.SimpleListCellFactory|banklocked.bag_TextListCell,23,150"
+			listStyle="com.pickgliss.ui.controls.list.List" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.bag_ListPanelText" textFormatStyle="banklocked.T_2_1" />
+		<component classname="com.pickgliss.ui.controls.cell.TextButtonListCellAdapter"
+			stylename="banklocked.bag_TextListCell" backStyle="banklocked.bag_TextBgAsset"
+			textStyle="banklocked.bag_ListPanelText" autoSizeAble="false" width="238"
+			height="22" backgoundInnerRectString="5,0,3,0,0" />
+
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename='ddtbanklock.infoText1' textFormatStyle="banklocked.TF5"
+			filterString="banklocked.GF5" width="300" height="300" />
+
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename='ddtbanklock.infoText2' textFormatStyle="banklocked.TF6"
+			filterString="banklocked.GF6" />
+
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename='ddtbanklock.infoText3' textFormatStyle="banklocked.TF7"
+			filterString="banklocked.GF7" />
+
+
+		<!-- 提示框背景 -->
+		<component classname="com.pickgliss.ui.image.Scale9CornerImage"
+			stylename="ddtbanklocked.BG1"
+			parentStyle="core.Scale9CornerImage.scale9CornerImagereleaseContentTextBG"
+			width="373" height="379" />
+
+		<component classname="bank.view.bankLock.BankDeleteLockFrame"
+			stylename="banklocked.deleteLockFrame" backStyle="SimpleFrameBackgoundOneIII"
+			closestyle="core.closebt" closeInnerRectString="44,6,3,30,14"
+			titleStyle="FrameTitleTextStyle" titleOuterRectPosString="10,11,5"
+			containerX="16" containerY="42" width="389" height="233"
+			moveInnerRectString="0,30,0,30,1" escEnable="true" />
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage"
+			stylename="banklocked.phoneServiceBG" parentStyle="core.bg6920"
+			width="355" height="124" x="1" y="3" />
+		<component classname="com.pickgliss.ui.controls.SelectedCheckButton"
+			stylename="banklocked.deleteQuestion" parentStyle="ddtshop.CartItemSelectBtn"
+			textStyle="banklocked.whiteTxt" fieldX="28" fieldY="-1" x="22" y="71" />
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.confirmTextInput" backStyle="banklocked.InputTextbackAsset"
+			focusBackStyle="banklocked.InputTextbackAsset" textStyle="banklocked.whiteNum"
+			focusBackgoundInnerRectString="0,0,0,0,-1" textInnerRectString="7,10,8,2,0"
+			maxChars="11" multiline="false" autoSize="none" x="106" y="55" width="105"
+			height="33" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.getConfirmNum" backStyle="core.bg6905"
+			backgoundInnerRectString="13,15,9,10,-1" textStyle="banklocked.whiteTxt"
+			filterString="null,lightFilter,null,grayFilter" x="221" y="53" />
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage"
+			stylename="banklocked.questionConfirmBG" parentStyle="core.bg6920"
+			width="355" height="277" x="3" y="3" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.question1" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x="20" y="22" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.answer1" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x="20" y="67" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.questionTxt1" textFormatStyle="banklocked.TF3"
+			filterString="banklocked.G_3" x="85" y="44" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.answer2" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x="20" y="180" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.question2" textFormatStyle="banklocked.T_2"
+			filterString="banklocked.G_1" x="20" y="128" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.questionTxt2" textFormatStyle="banklocked.TF3"
+			filterString="banklocked.G_3" x="85" y="153" />
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.answerTextInput1" backStyle="banklocked.InputTextbackAsset"
+			focusBackStyle="banklocked.InputTextbackAsset" textStyle="banklocked.whiteTxt"
+			focusBackgoundInnerRectString="0,0,0,0,-1" textInnerRectString="7,10,8,2,0"
+			maxChars="11" multiline="false" autoSize="none" x="71" y="85" width="238"
+			height="33" />
+		<component classname="com.pickgliss.ui.controls.TextInput"
+			stylename="banklocked.answerTextInput2" backStyle="banklocked.InputTextbackAsset"
+			focusBackStyle="banklocked.InputTextbackAsset" textStyle="banklocked.whiteTxt"
+			focusBackgoundInnerRectString="0,0,0,0,-1" textInnerRectString="7,10,8,2,0"
+			maxChars="11" multiline="false" autoSize="none" x="71" y="201" width="238"
+			height="33" />
+		<component classname="bank.view.bankLock.BankLockFrame"
+			stylename="banklocked.bankLockFrame" backStyle="SimpleFrameBackgoundOneIII"
+			closestyle="core.closebt" closeInnerRectString="44,6,3,30,14"
+			titleStyle="FrameTitleTextStyle" titleOuterRectPosString="10,11,5"
+			containerX="20" containerY="40" width="408" height="448"
+			moveInnerRectString="0,30,0,30,1" escEnable='true' />
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage"
+			stylename="banklocked.deleteQuestionBG" parentStyle="core.bg6920"
+			width="359" height="144" x="1" y="27" />
+		<component classname="com.pickgliss.ui.image.ScaleBitmapImage"
+			stylename="banklocked.btnBG" resourceLink="asset.core.btmBG"
+			scaleGridString="14,13,250,22" width="370" height="85" x="-1" y="342" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.delPassBtn" parentStyle='banklocked.setPassBtn'
+			x="19" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.phoneServiceBtn" parentStyle="core.simplebt" x="133"
+			y="348" width="96" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.startBtn" parentStyle="core.simplebt" x="74" y="239"
+			width="96" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.nextTimeBtn" parentStyle="core.simplebt" x="276"
+			y="239" width="96" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.appealBtn" parentStyle="core.simplebt" x="133"
+			y="389" width="96" />
+		<component classname="banklocked.phone4399.GetConfirmFrame"
+			stylename="banklocked.getConfirmFrame" parentStyle="banklocked.benefitOfBindingFrame"
+			height="370" />
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton"
+			stylename="banklocked.unlockedBtn" backStyle="asset.banlocked.unlock"
+			x="270" y="349" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.getConfirmBtn" backStyle="core.simplebtbg"
+			textStyle="SimpleButtonTextStyle" backgoundInnerRectString="18,20,7,13,-1"
+			filterString="null,lightFilter,null,grayFilter" x="163" y="273" />
+		<component classname="banklocked.ExplainFrame4399"
+			stylename="banklocked.explainFrame4399" parentStyle="banklocked.explainFrame2" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.setPassBtn3" parentStyle="core.simplebt" x="46"
+			y="348" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.delPassBtn3" parentStyle="core.simplebt" x="46"
+			y="348" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.whiteTxt" textFormatStyle="banklocked.whiteTxtTF"
+			filterString="banklocked.whiteTxtGF" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.whiteNum" textFormatStyle="banklocked.whiteNumTF"
+			filterString="banklocked.whiteTxtGF" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.deepRedTxt" textFormatStyle="banklocked.deepRedTxtTF"
+			filterString="banklocked.deepRedTxtGF" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.forgetPwdBtn" parentStyle="banklocked.setPassBtn"
+			x="215" y="132" enable="true" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.lightRedTxt" textFormatStyle="banklocked.lightRedTxtTF"
+			filterString="banklocked.lightRedTxtGF" />
+		<component classname="banklocked.AppealFrame" stylename="banklocked.appealFrame"
+			backStyle="SimpleFrameBackgoundOneIII" closestyle="core.closebt"
+			closeInnerRectString="44,6,3,30,14" titleStyle="FrameTitleTextStyle"
+			titleOuterRectPosString="10,11,5" containerX="16" containerY="42"
+			width="408" height="488" moveInnerRectString="0,30,0,30,1" escEnable="true" />
+		<component classname="com.pickgliss.ui.controls.TextButton"
+			stylename="banklocked.resetQuestionBtn" parentStyle="core.simplebt"
+			x="211" y="389" />
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton"
+			stylename="banklocked.settingBtn" backStyle="banklocked.setting" x="299"
+			y="-37" />
+		<component classname="com.pickgliss.ui.controls.ScrollPanel"
+			stylename="ddtbanklock.selectScrollPanel" parentStyle="core.ScrollPanel"
+			width="360" height="324" hScrollProxy="2" y="37" x="3"
+			vUnitIncrement="3" />
+		<component classname="com.pickgliss.ui.controls.SelectedCheckButton"
+			stylename="ddtbanklock.check" x="5" y="5"
+			parentStyle="ddtbanklock.BaseSelectedCheckButton" />
+		<component classname="banklocked.BagLockPSWNeededSelecterFrame"
+			stylename="banklocked.pswNeededSelecter" backStyle="SimpleFrameBackgoundOne"
+			closestyle="core.closebt" closeInnerRectString="44,6,3,30,14"
+			titleStyle="FrameTitleTextStyle" titleOuterRectPosString="10,11,5"
+			containerX="20" containerY="40" width="408" height="483"
+			moveInnerRectString="0,30,0,30,1" escEnable="true" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="ddtbanklock.SelectedCheckButtonText" textFormatStyle="ddtbanklock.SelectedCheckButtonTextTF"
+			filterString="ddtbanklock.SelectedCheckButtonTextGF" />
+		<component classname="com.pickgliss.ui.controls.SelectedCheckButton"
+			stylename="ddtbanklock.BaseSelectedCheckButton" parentStyle="core.selectedCheck2"
+			textStyle="ddtbanklock.SelectedCheckButtonText" fieldX="37" fieldY="9"
+			width="103" height="30" />
+		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton"
+			stylename="banklocked.submitBtn" backStyle="banklocked.submit" x="103"
+			y="374" />
+		<component classname="com.pickgliss.ui.text.FilterFrameText"
+			stylename="banklocked.itemDetail" textFormatStyle="banklocked.TF8"
+			filterString="banklocked.GF8" width="158" height="21" x="16" y="12" />
+
+	</components>
+	<customs>
+
+		<custom classname="asset.banklocked.explainAsset" stylename="banklocked.explainText"
+			x="12" y="21" />
+		<custom classname="flash.geom.Point" stylename="bankLocked.nextBtnPos"
+			x="51" y="137" />
+
+		<custom classname="flash.geom.Point" stylename="bankLocked.cancelBtnPos"
+			x="234" y="137" />
+	</customs>
+	<bitmaps>
+		<bitmapData resourceLink="asset.banklocked.pwdExplanation"
+			x="-3" y="6" />
+	</bitmaps>
+</style>
