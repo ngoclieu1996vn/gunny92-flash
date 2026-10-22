@@ -199,10 +199,10 @@
 			x="139" y="402" />`
 
 
-		<!-------<component classname="com.pickgliss.ui.image.ScaleBitmapImage" 
-			stylename="explorerManual.upgradeMaterial.icon" resourceLink=""/>----- -->
+		<!--- - - - -<component classname="com.pickgliss.ui.image.ScaleBitmapImage"
+			stylename="explorerManual.upgradeMaterial.icon" resourceLink=""/>- - - - - -->
 
-		<!----------------------------章节------------------------------------------------- -->
+		<!--- - - - - - - - - - - - - - - - - - - - - - - - - -章节- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
 		<!-- 页 -->
@@ -228,8 +228,8 @@
 			stylename="explorerManual.manualpageView.downPageBtn" backStyle="asset.explorerManual.pageDownBtn"
 			filterString="null,lightFilter,null,grayFilter" x="739" y="472" />
 
-		<!--<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="explorerManual.manualpageView.payTypeIcon" 
-			resourceLink="asset.ddtshop.PayTypeLabelTicket,asset.ddtshop.yellowBoy" x="100" 
+		<!--<component classname="com.pickgliss.ui.image.ScaleBitmapImage" stylename="explorerManual.manualpageView.payTypeIcon"
+			resourceLink="asset.ddtshop.PayTypeLabelTicket,asset.ddtshop.yellowBoy" x="100"
 			y="100"></component> -->
 
 		<component classname="com.pickgliss.ui.text.FilterFrameText"
@@ -266,9 +266,9 @@
 
 
 
-		<!----------------------------------------------------------------------------- -->
+		<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-		<!-- ----商城---------- -->
+		<!-- - - - -商城- - - - - - - - - - -->
 
 		<component classname="com.pickgliss.ui.text.FilterFrameText"
 			stylename="explorerManual.shop.descText" textFormatStyle="explorerManual.shop.descTxtTF"
@@ -331,7 +331,7 @@
 			x="389" y="351" width="62" height="23"></component>
 	
 	
-	<component classname="explorerManual.view.shop.ManualShopQuickBuy"  stylename="explorerManual.shop.QuickBuyAlert"  parentStyle="BaseFrame" 
+	<component classname="explorerManual.view.shop.ManualShopQuickBuy"  stylename="explorerManual.shop.QuickBuyAlert"  parentStyle="BaseFrame"
 		containerY="30" width="340" height="225"/>	
 	
 		<component classname="com.pickgliss.ui.text.FilterFrameText"
@@ -355,10 +355,10 @@
 		<component classname="com.pickgliss.ui.controls.container.VBox"
 			stylename="explorerManual.pageDirectoryView.itemVBox" x="423" y="74" spacing="3" />
 		
-		<!-- -------------- -->
+		<!-- - - - - - - - - - - - - - - -->
 		
 		
-	  <component classname="com.pickgliss.ui.image.ScaleFrameImage" stylename="explorerManual.view.numImage" 
+	  <component classname="com.pickgliss.ui.image.ScaleFrameImage" stylename="explorerManual.view.numImage"
 	    		 resourceLink="asset.explorerManual.num1,asset.explorerManual.num2,asset.explorerManual.num3,asset.explorerManual.num4,asset.explorerManual.num5,asset.explorerManual.num6,asset.explorerManual.num7"
 	    		 x="0" y="0"/>
 	    		 
@@ -528,10 +528,10 @@
 		<bitmapData resourceLink="asset.explorerManual.pageRightView.lostTxtIcon"
 			x="540" y="442" />
 
-		<!-- <bitmapData resourceLink="asset.explorerManual.upgradeMaterial11181" 
-			x="104" y="397"/> <bitmapData resourceLink="asset.explorerManual.upgradeMaterial11182" 
-			x="104" y="397"/> <bitmapData resourceLink="asset.explorerManual.upgradeMaterial11183" 
-			x="104" y="397"/> <bitmapData resourceLink="asset.explorerManual.upgradeMaterial11184" 
+		<!-- <bitmapData resourceLink="asset.explorerManual.upgradeMaterial11181"
+			x="104" y="397"/> <bitmapData resourceLink="asset.explorerManual.upgradeMaterial11182"
+			x="104" y="397"/> <bitmapData resourceLink="asset.explorerManual.upgradeMaterial11183"
+			x="104" y="397"/> <bitmapData resourceLink="asset.explorerManual.upgradeMaterial11184"
 			x="104" y="397"/> -->
 
 		<bitmapData resourceLink="asset.explorerManual.previewIcon" />

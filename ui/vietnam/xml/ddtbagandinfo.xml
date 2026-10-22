@@ -1044,9 +1044,9 @@
 		
 		<!-- 翻页按钮 -->
 		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="bagAndInfo.tabPage1" 
-			backStyle="bagAndInfo.tabPag1"pressEnable="true" x='439' y='45'/>
+			backStyle="bagAndInfo.tabPag1" pressEnable="true" x='439' y='45'/>
 		<component classname="com.pickgliss.ui.controls.SimpleBitmapButton" stylename="bagAndInfo.tabPage2" 
-			backStyle="bagAndInfo.tabPag2"pressEnable="true" x='17' y='45'/>
+			backStyle="bagAndInfo.tabPag2" pressEnable="true" x='17' y='45'/>
 
 		<component classname="com.pickgliss.ui.controls.TextButton"
 			stylename="addFriendBtn1" backStyle="im.AddFriendImg2"

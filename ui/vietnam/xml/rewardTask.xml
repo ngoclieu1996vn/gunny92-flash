@@ -1,4 +1,4 @@
-﻿<style name="rewardTask" version="1.0.0" source="ui/vietnam/swf/rewardTask.swf">
+<style name="rewardTask" version="1.0.0" source="ui/vietnam/swf/rewardTask.swf">
 <sets>
 					
 	<set stylename="rewardTask.taskDescriptionTextTF" args="Arial,14,0xFFECC2,true" type="flash.text.TextFormat" leading="6" />
@@ -52,7 +52,7 @@
 	<component classname="com.pickgliss.ui.controls.container.HBox" stylename="rewardTask.hbox" spacing="7" x="59" y="326" />
 	<component classname="com.pickgliss.ui.controls.container.VBox" stylename="rewardTask.vbox" spacing="29.5" x="7" y="70" />
 	<component stylename="rewardTask.rewardNameText"	classname="com.pickgliss.ui.text.FilterFrameText"
-		textFormatStyle="rewardTask.rewardNameTextFormat"filterString="rewardTask.rewardNameTextGF"
+		textFormatStyle="rewardTask.rewardNameTextFormat" filterString="rewardTask.rewardNameTextGF"
 		x="-10.5" y="72" width="90" wordWrap="true"/>
 	
 			
